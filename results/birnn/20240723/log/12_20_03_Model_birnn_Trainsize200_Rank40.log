@@ -1,0 +1,21 @@
+INFO:birnn:|2024-07-23 12:20:03| {'classification': False, 'visualize': True, 'inductive': False, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 200, 'density': 0.8, 'logger': 'None', 'model': 'birnn', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 5, 'epochs': 500, 'patience': 50, 'verbose': 0, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'train_device': 'desktop-cpu-core-i7-7820x-fp32', 'device_name': 'core-i7-7820x', 'log': <utils.logger.Logger object at 0x113dbb3691f0>}
+INFO:birnn:|2024-07-23 12:20:03| ********************Experiment Start********************
+INFO:birnn:|2024-07-23 12:20:30| Round=1 BestEpoch=305 MAE=0.0005 RMSE=0.0007 NMAE=0.1050 NRMSE=0.1384 Training_time=11.9 s 
+INFO:birnn:|2024-07-23 12:20:30| Acc = [1%=0.0759, 5%=0.3574, 10%=0.6193] 
+INFO:birnn:|2024-07-23 12:20:55| Round=2 BestEpoch=275 MAE=0.0006 RMSE=0.0008 NMAE=0.1206 NRMSE=0.1539 Training_time=10.7 s 
+INFO:birnn:|2024-07-23 12:20:55| Acc = [1%=0.0668, 5%=0.3201, 10%=0.5468] 
+INFO:birnn:|2024-07-23 12:21:24| Round=3 BestEpoch=324 MAE=0.0006 RMSE=0.0008 NMAE=0.1157 NRMSE=0.1469 Training_time=12.6 s 
+INFO:birnn:|2024-07-23 12:21:24| Acc = [1%=0.0651, 5%=0.3043, 10%=0.5585] 
+INFO:birnn:|2024-07-23 12:21:53| Round=4 BestEpoch=340 MAE=0.0005 RMSE=0.0007 NMAE=0.1076 NRMSE=0.1355 Training_time=13.3 s 
+INFO:birnn:|2024-07-23 12:21:53| Acc = [1%=0.0738, 5%=0.3271, 10%=0.5769] 
+INFO:birnn:|2024-07-23 12:22:31| Round=5 BestEpoch=444 MAE=0.0006 RMSE=0.0008 NMAE=0.1171 NRMSE=0.1477 Training_time=17.2 s 
+INFO:birnn:|2024-07-23 12:22:31| Acc = [1%=0.0698, 5%=0.3193, 10%=0.5534] 
+INFO:birnn:|2024-07-23 12:22:31| ********************Experiment Results:********************
+INFO:birnn:|2024-07-23 12:22:31| MAE: 0.0006 ± 0.0000
+INFO:birnn:|2024-07-23 12:22:31| RMSE: 0.0007 ± 0.0000
+INFO:birnn:|2024-07-23 12:22:31| NMAE: 0.1132 ± 0.0059
+INFO:birnn:|2024-07-23 12:22:31| NRMSE: 0.1445 ± 0.0067
+INFO:birnn:|2024-07-23 12:22:31| Acc_1: 0.0703 ± 0.0041
+INFO:birnn:|2024-07-23 12:22:31| Acc_5: 0.3256 ± 0.0175
+INFO:birnn:|2024-07-23 12:22:31| Acc_10: 0.5710 ± 0.0261
+INFO:birnn:|2024-07-23 12:22:31| ********************Experiment Success********************

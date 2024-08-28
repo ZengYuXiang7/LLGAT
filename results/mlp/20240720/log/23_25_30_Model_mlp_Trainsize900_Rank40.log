@@ -1,0 +1,21 @@
+INFO:mlp:|2024-07-20 23:25:30| {'classification': False, 'visualize': True, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 900, 'density': 0.8, 'device_name': 'core-i7-7820x', 'logger': 'None', 'model': 'mlp', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 5, 'epochs': 500, 'patience': 50, 'verbose': 1, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'log': <utils.logger.Logger object at 0xa9ae93d0c70>}
+INFO:mlp:|2024-07-20 23:25:30| ********************Experiment Start********************
+INFO:mlp:|2024-07-20 23:25:47| Round=1 BestEpoch=113 MAE=0.0004 RMSE=0.0005 NMAE=0.0781 NRMSE=0.0959 Training_time=6.7 s 
+INFO:mlp:|2024-07-20 23:25:47| Acc = [1%=0.0890, 5%=0.4112, 10%=0.6790] 
+INFO:mlp:|2024-07-20 23:26:02| Round=2 BestEpoch=102 MAE=0.0003 RMSE=0.0005 NMAE=0.0705 NRMSE=0.0869 Training_time=5.9 s 
+INFO:mlp:|2024-07-20 23:26:02| Acc = [1%=0.1017, 5%=0.4513, 10%=0.7253] 
+INFO:mlp:|2024-07-20 23:26:16| Round=3 BestEpoch= 84 MAE=0.0004 RMSE=0.0005 NMAE=0.0773 NRMSE=0.0945 Training_time=4.8 s 
+INFO:mlp:|2024-07-20 23:26:16| Acc = [1%=0.0911, 5%=0.4217, 10%=0.6848] 
+INFO:mlp:|2024-07-20 23:26:31| Round=4 BestEpoch= 96 MAE=0.0004 RMSE=0.0005 NMAE=0.0796 NRMSE=0.0978 Training_time=5.5 s 
+INFO:mlp:|2024-07-20 23:26:31| Acc = [1%=0.0898, 5%=0.4112, 10%=0.6815] 
+INFO:mlp:|2024-07-20 23:26:42| Round=5 BestEpoch= 67 MAE=0.0003 RMSE=0.0004 NMAE=0.0701 NRMSE=0.0867 Training_time=3.8 s 
+INFO:mlp:|2024-07-20 23:26:42| Acc = [1%=0.1017, 5%=0.4598, 10%=0.7225] 
+INFO:mlp:|2024-07-20 23:26:42| ********************Experiment Results:********************
+INFO:mlp:|2024-07-20 23:26:42| MAE: 0.0004 ± 0.0000
+INFO:mlp:|2024-07-20 23:26:42| RMSE: 0.0005 ± 0.0000
+INFO:mlp:|2024-07-20 23:26:42| NMAE: 0.0751 ± 0.0040
+INFO:mlp:|2024-07-20 23:26:42| NRMSE: 0.0923 ± 0.0047
+INFO:mlp:|2024-07-20 23:26:42| Acc_1: 0.0946 ± 0.0058
+INFO:mlp:|2024-07-20 23:26:42| Acc_5: 0.4310 ± 0.0205
+INFO:mlp:|2024-07-20 23:26:42| Acc_10: 0.6986 ± 0.0208
+INFO:mlp:|2024-07-20 23:26:42| ********************Experiment Success********************

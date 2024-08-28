@@ -1,0 +1,21 @@
+INFO:gcn:|2024-07-20 22:03:04| {'classification': False, 'visualize': True, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 200, 'density': 0.8, 'device_name': 'core-i7-7820x', 'logger': 'None', 'model': 'gcn', 'rank': 300, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 5, 'epochs': 500, 'patience': 50, 'verbose': 1, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'log': <utils.logger.Logger object at 0x1549faf90c70>}
+INFO:gcn:|2024-07-20 22:03:04| ********************Experiment Start********************
+INFO:gcn:|2024-07-20 22:04:37| Round=1 BestEpoch=257 MAE=0.0002 RMSE=0.0004 NMAE=0.0455 NRMSE=0.0682 Training_time=18.9 s 
+INFO:gcn:|2024-07-20 22:04:37| Acc = [1%=0.1634, 5%=0.6924, 10%=0.8916] 
+INFO:gcn:|2024-07-20 22:06:04| Round=2 BestEpoch=240 MAE=0.0002 RMSE=0.0004 NMAE=0.0499 NRMSE=0.0734 Training_time=17.5 s 
+INFO:gcn:|2024-07-20 22:06:04| Acc = [1%=0.1547, 5%=0.6302, 10%=0.8918] 
+INFO:gcn:|2024-07-20 22:07:36| Round=3 BestEpoch=255 MAE=0.0002 RMSE=0.0003 NMAE=0.0429 NRMSE=0.0608 Training_time=18.5 s 
+INFO:gcn:|2024-07-20 22:07:36| Acc = [1%=0.1846, 5%=0.6933, 10%=0.8969] 
+INFO:gcn:|2024-07-20 22:09:03| Round=4 BestEpoch=193 MAE=0.0002 RMSE=0.0004 NMAE=0.0460 NRMSE=0.0685 Training_time=14.8 s 
+INFO:gcn:|2024-07-20 22:09:03| Acc = [1%=0.2003, 5%=0.6736, 10%=0.8638] 
+INFO:gcn:|2024-07-20 22:09:50| Round=5 BestEpoch=104 MAE=0.0003 RMSE=0.0004 NMAE=0.0542 NRMSE=0.0806 Training_time=7.6 s 
+INFO:gcn:|2024-07-20 22:09:50| Acc = [1%=0.1435, 5%=0.6447, 10%=0.8558] 
+INFO:gcn:|2024-07-20 22:09:50| ********************Experiment Results:********************
+INFO:gcn:|2024-07-20 22:09:50| MAE: 0.0002 ± 0.0000
+INFO:gcn:|2024-07-20 22:09:50| RMSE: 0.0004 ± 0.0000
+INFO:gcn:|2024-07-20 22:09:50| NMAE: 0.0477 ± 0.0040
+INFO:gcn:|2024-07-20 22:09:50| NRMSE: 0.0703 ± 0.0065
+INFO:gcn:|2024-07-20 22:09:50| Acc_1: 0.1693 ± 0.0205
+INFO:gcn:|2024-07-20 22:09:50| Acc_5: 0.6668 ± 0.0254
+INFO:gcn:|2024-07-20 22:09:50| Acc_10: 0.8800 ± 0.0168
+INFO:gcn:|2024-07-20 22:09:50| ********************Experiment Success********************

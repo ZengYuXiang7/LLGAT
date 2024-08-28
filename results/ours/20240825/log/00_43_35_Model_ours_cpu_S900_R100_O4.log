@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-25 00:43:35| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 100,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 900,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-25 00:43:35| ********************Experiment Start********************
+INFO:ours:|2024-08-25 00:43:43| Run 0 Error: DataLoader worker (pid(s) 3654738) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 00:47:23| Run 1 Error: DataLoader worker (pid(s) 3680314) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 00:50:56| Round=3 BestEpoch=361 MAE=0.0001 RMSE=0.0002 NMAE=0.0219 NRMSE=0.0343 Training_time=91.6 s 
+INFO:ours:|2024-08-25 00:54:00| Run 3 Error: DataLoader worker (pid(s) 3726471) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 00:57:36| Run 4 Error: DataLoader worker (pid(s) 3751831) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 00:57:36| ********************Experiment Results:********************
+INFO:ours:|2024-08-25 00:57:36| MAE: 0.0001 ± 0.0000
+INFO:ours:|2024-08-25 00:57:36| RMSE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-25 00:57:36| NMAE: 0.0219 ± 0.0000
+INFO:ours:|2024-08-25 00:57:36| NRMSE: 0.0343 ± 0.0000
+INFO:ours:|2024-08-25 00:57:36| Acc_1: 0.4357 ± 0.0000
+INFO:ours:|2024-08-25 00:57:36| Acc_5: 0.8954 ± 0.0000
+INFO:ours:|2024-08-25 00:57:36| Acc_10: 0.9760 ± 0.0000
+INFO:ours:|2024-08-25 00:57:36| ********************Experiment Success********************

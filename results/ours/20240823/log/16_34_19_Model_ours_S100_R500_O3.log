@@ -1,0 +1,51 @@
+INFO:ours:|2024-08-23 16:34:19| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 3, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 500,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 100,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-23 16:34:19| ********************Experiment Start********************
+INFO:ours:|2024-08-23 16:37:08| Round=1 BestEpoch=402 MAE=0.0004 RMSE=0.0006 NMAE=0.0817 NRMSE=0.1175 Training_time=48.5 s 
+INFO:ours:|2024-08-23 16:39:32| Round=2 BestEpoch=322 MAE=0.0003 RMSE=0.0005 NMAE=0.0705 NRMSE=0.1021 Training_time=39.5 s 
+INFO:ours:|2024-08-23 16:41:09| Run 2 Error: Caught ValueError in DataLoader worker process 4.
+Original Traceback (most recent call last):
+  File "train_model.py", line 136, in RunOnce
+    model.load_state_dict(torch.load(model_path))
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 998, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 445, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 426, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: './checkpoints/ours/Model_ours_S100_R500_O3_round_2.pt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rtx4090/Code_python/LLM2024/data.py", line 112, in __getitem__
+    graph, label = get_matrix_and_ops(key)
+  File "/home/rtx4090/Code_python/LLM2024/modules/latency_data.py", line 79, in get_matrix_and_ops
+    if matrix[other, idx + 1]:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+, This run will be skipped.
+INFO:ours:|2024-08-23 16:42:30| Round=4 BestEpoch=134 MAE=0.0005 RMSE=0.0007 NMAE=0.1013 NRMSE=0.1318 Training_time=16.7 s 
+INFO:ours:|2024-08-23 16:44:09| Round=5 BestEpoch=193 MAE=0.0004 RMSE=0.0006 NMAE=0.0785 NRMSE=0.1072 Training_time=23.9 s 
+INFO:ours:|2024-08-23 16:44:09| ********************Experiment Results:********************
+INFO:ours:|2024-08-23 16:44:09| MAE: 0.0004 ± 0.0001
+INFO:ours:|2024-08-23 16:44:09| RMSE: 0.0006 ± 0.0001
+INFO:ours:|2024-08-23 16:44:09| NMAE: 0.0830 ± 0.0113
+INFO:ours:|2024-08-23 16:44:09| NRMSE: 0.1146 ± 0.0113
+INFO:ours:|2024-08-23 16:44:09| Acc_1: 0.1005 ± 0.0306
+INFO:ours:|2024-08-23 16:44:09| Acc_5: 0.4765 ± 0.0706
+INFO:ours:|2024-08-23 16:44:09| Acc_10: 0.6948 ± 0.0611
+INFO:ours:|2024-08-23 16:44:09| ********************Experiment Success********************

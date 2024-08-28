@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-23 16:03:00| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 3, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 200,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 100,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-23 16:03:00| ********************Experiment Start********************
+INFO:ours:|2024-08-23 16:04:29| Round=1 BestEpoch=158 MAE=0.0003 RMSE=0.0005 NMAE=0.0623 NRMSE=0.0916 Training_time=19.7 s 
+INFO:ours:|2024-08-23 16:07:02| Round=2 BestEpoch=359 MAE=0.0003 RMSE=0.0005 NMAE=0.0622 NRMSE=0.0940 Training_time=43.6 s 
+INFO:ours:|2024-08-23 16:08:28| Round=3 BestEpoch=155 MAE=0.0003 RMSE=0.0005 NMAE=0.0703 NRMSE=0.1039 Training_time=19.0 s 
+INFO:ours:|2024-08-23 16:09:28| Round=4 BestEpoch= 74 MAE=0.0004 RMSE=0.0005 NMAE=0.0796 NRMSE=0.1022 Training_time=9.1 s 
+INFO:ours:|2024-08-23 16:11:30| Round=5 BestEpoch=265 MAE=0.0003 RMSE=0.0005 NMAE=0.0707 NRMSE=0.1000 Training_time=32.3 s 
+INFO:ours:|2024-08-23 16:11:30| ********************Experiment Results:********************
+INFO:ours:|2024-08-23 16:11:30| MAE: 0.0003 ± 0.0000
+INFO:ours:|2024-08-23 16:11:30| RMSE: 0.0005 ± 0.0000
+INFO:ours:|2024-08-23 16:11:30| NMAE: 0.0690 ± 0.0064
+INFO:ours:|2024-08-23 16:11:30| NRMSE: 0.0983 ± 0.0047
+INFO:ours:|2024-08-23 16:11:30| Acc_1: 0.1424 ± 0.0458
+INFO:ours:|2024-08-23 16:11:30| Acc_5: 0.5224 ± 0.0681
+INFO:ours:|2024-08-23 16:11:30| Acc_10: 0.7708 ± 0.0495
+INFO:ours:|2024-08-23 16:11:30| ********************Experiment Success********************

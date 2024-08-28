@@ -1,0 +1,21 @@
+INFO:gru:|2024-07-20 21:36:23| {'classification': False, 'visualize': True, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 100, 'density': 0.8, 'device_name': 'core-i7-7820x', 'logger': 'None', 'model': 'gru', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 5, 'epochs': 500, 'patience': 50, 'verbose': 1, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'log': <utils.logger.Logger object at 0x5f903ce9c70>}
+INFO:gru:|2024-07-20 21:36:23| ********************Experiment Start********************
+INFO:gru:|2024-07-20 21:36:35| Round=1 BestEpoch= 98 MAE=0.0007 RMSE=0.0009 NMAE=0.1393 NRMSE=0.1718 Training_time=3.8 s 
+INFO:gru:|2024-07-20 21:36:35| Acc = [1%=0.0478, 5%=0.2500, 10%=0.4638] 
+INFO:gru:|2024-07-20 21:36:41| Round=2 BestEpoch= 33 MAE=0.0007 RMSE=0.0009 NMAE=0.1396 NRMSE=0.1729 Training_time=1.3 s 
+INFO:gru:|2024-07-20 21:36:41| Acc = [1%=0.0524, 5%=0.2537, 10%=0.4646] 
+INFO:gru:|2024-07-20 21:36:55| Round=3 BestEpoch=116 MAE=0.0007 RMSE=0.0009 NMAE=0.1367 NRMSE=0.1688 Training_time=4.5 s 
+INFO:gru:|2024-07-20 21:36:55| Acc = [1%=0.0500, 5%=0.2553, 10%=0.4749] 
+INFO:gru:|2024-07-20 21:37:01| Round=4 BestEpoch= 35 MAE=0.0007 RMSE=0.0009 NMAE=0.1425 NRMSE=0.1753 Training_time=1.4 s 
+INFO:gru:|2024-07-20 21:37:01| Acc = [1%=0.0462, 5%=0.2414, 10%=0.4549] 
+INFO:gru:|2024-07-20 21:37:09| Round=5 BestEpoch= 41 MAE=0.0007 RMSE=0.0009 NMAE=0.1356 NRMSE=0.1693 Training_time=1.6 s 
+INFO:gru:|2024-07-20 21:37:09| Acc = [1%=0.0524, 5%=0.2704, 10%=0.4906] 
+INFO:gru:|2024-07-20 21:37:09| ********************Experiment Results:********************
+INFO:gru:|2024-07-20 21:37:09| MAE: 0.0007 ± 0.0000
+INFO:gru:|2024-07-20 21:37:09| RMSE: 0.0009 ± 0.0000
+INFO:gru:|2024-07-20 21:37:09| NMAE: 0.1388 ± 0.0024
+INFO:gru:|2024-07-20 21:37:09| NRMSE: 0.1716 ± 0.0024
+INFO:gru:|2024-07-20 21:37:09| Acc_1: 0.0498 ± 0.0024
+INFO:gru:|2024-07-20 21:37:09| Acc_5: 0.2542 ± 0.0095
+INFO:gru:|2024-07-20 21:37:09| Acc_10: 0.4697 ± 0.0122
+INFO:gru:|2024-07-20 21:37:09| ********************Experiment Success********************

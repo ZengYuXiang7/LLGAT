@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-24 03:51:23| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': gpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': 1080Ti,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gcn, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 100,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-gpu-gtx-1080ti-fp32, 'train_size': 500,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-24 03:51:23| ********************Experiment Start********************
+INFO:ours:|2024-08-24 03:53:54| Round=1 BestEpoch=298 MAE=0.0002 RMSE=0.0004 NMAE=0.0386 NRMSE=0.0678 Training_time=50.7 s 
+INFO:ours:|2024-08-24 03:57:12| Round=2 BestEpoch=434 MAE=0.0002 RMSE=0.0004 NMAE=0.0378 NRMSE=0.0682 Training_time=74.0 s 
+INFO:ours:|2024-08-24 03:59:41| Round=3 BestEpoch=303 MAE=0.0002 RMSE=0.0004 NMAE=0.0398 NRMSE=0.0688 Training_time=51.3 s 
+INFO:ours:|2024-08-24 04:02:01| Round=4 BestEpoch=271 MAE=0.0002 RMSE=0.0004 NMAE=0.0426 NRMSE=0.0777 Training_time=45.9 s 
+INFO:ours:|2024-08-24 04:03:45| Round=5 BestEpoch=180 MAE=0.0002 RMSE=0.0004 NMAE=0.0395 NRMSE=0.0725 Training_time=30.7 s 
+INFO:ours:|2024-08-24 04:03:45| ********************Experiment Results:********************
+INFO:ours:|2024-08-24 04:03:45| MAE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-24 04:03:45| RMSE: 0.0004 ± 0.0000
+INFO:ours:|2024-08-24 04:03:45| NMAE: 0.0396 ± 0.0016
+INFO:ours:|2024-08-24 04:03:45| NRMSE: 0.0710 ± 0.0038
+INFO:ours:|2024-08-24 04:03:45| Acc_1: 0.3296 ± 0.0055
+INFO:ours:|2024-08-24 04:03:45| Acc_5: 0.7956 ± 0.0097
+INFO:ours:|2024-08-24 04:03:45| Acc_10: 0.9162 ± 0.0058
+INFO:ours:|2024-08-24 04:03:45| ********************Experiment Success********************

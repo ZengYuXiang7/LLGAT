@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-25 00:26:33| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 500,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 500,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-25 00:26:33| ********************Experiment Start********************
+INFO:ours:|2024-08-25 00:27:55| Run 0 Error: DataLoader worker (pid(s) 3537634) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 00:30:28| Round=2 BestEpoch=280 MAE=0.0001 RMSE=0.0002 NMAE=0.0295 NRMSE=0.0460 Training_time=52.5 s 
+INFO:ours:|2024-08-25 00:30:30| Run 2 Error: DataLoader worker (pid(s) 3558193) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 00:33:13| Round=4 BestEpoch=307 MAE=0.0002 RMSE=0.0003 NMAE=0.0361 NRMSE=0.0628 Training_time=57.8 s 
+INFO:ours:|2024-08-25 00:33:46| Run 4 Error: DataLoader worker (pid 3584411) is killed by signal: Segmentation fault. , This run will be skipped.
+INFO:ours:|2024-08-25 00:33:46| ********************Experiment Results:********************
+INFO:ours:|2024-08-25 00:33:46| MAE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-25 00:33:46| RMSE: 0.0003 ± 0.0000
+INFO:ours:|2024-08-25 00:33:46| NMAE: 0.0328 ± 0.0033
+INFO:ours:|2024-08-25 00:33:46| NRMSE: 0.0544 ± 0.0084
+INFO:ours:|2024-08-25 00:33:46| Acc_1: 0.3487 ± 0.0094
+INFO:ours:|2024-08-25 00:33:46| Acc_5: 0.8147 ± 0.0070
+INFO:ours:|2024-08-25 00:33:46| Acc_10: 0.9400 ± 0.0130
+INFO:ours:|2024-08-25 00:33:46| ********************Experiment Success********************

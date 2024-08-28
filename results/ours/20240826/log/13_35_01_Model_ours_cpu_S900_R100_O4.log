@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-26 13:35:01| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 100,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 900,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-26 13:35:01| ********************Experiment Start********************
+INFO:ours:|2024-08-26 13:40:50| Round=1 BestEpoch=657 MAE=0.0001 RMSE=0.0002 NMAE=0.0225 NRMSE=0.0360 Training_time=170.3 s 
+INFO:ours:|2024-08-26 13:44:21| Run 2 Error: DataLoader worker (pid(s) 686239) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-26 13:44:22| MAE=0.0001 RMSE=0.0002 NMAE=0.0248 NRMSE=0.0379
+INFO:ours:|2024-08-26 13:47:52| Round=4 BestEpoch=347 MAE=0.0001 RMSE=0.0002 NMAE=0.0226 NRMSE=0.0354 Training_time=90.7 s 
+INFO:ours:|2024-08-26 13:51:46| Round=5 BestEpoch=400 MAE=0.0001 RMSE=0.0002 NMAE=0.0219 NRMSE=0.0350 Training_time=105.1 s 
+INFO:ours:|2024-08-26 13:51:46| ********************Experiment Results:********************
+INFO:ours:|2024-08-26 13:51:46| MAE: 0.0001 ± 0.0000
+INFO:ours:|2024-08-26 13:51:46| RMSE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-26 13:51:46| NMAE: 0.0230 ± 0.0011
+INFO:ours:|2024-08-26 13:51:46| NRMSE: 0.0361 ± 0.0011
+INFO:ours:|2024-08-26 13:51:46| Acc_1: 0.4133 ± 0.0352
+INFO:ours:|2024-08-26 13:51:46| Acc_5: 0.8887 ± 0.0066
+INFO:ours:|2024-08-26 13:51:46| Acc_10: 0.9738 ± 0.0017
+INFO:ours:|2024-08-26 13:51:46| ********************Experiment Success********************

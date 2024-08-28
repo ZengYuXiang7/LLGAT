@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-24 19:21:57| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 200,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 200,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-24 19:21:57| ********************Experiment Start********************
+INFO:ours:|2024-08-24 19:24:19| Round=1 BestEpoch=322 MAE=0.0002 RMSE=0.0004 NMAE=0.0479 NRMSE=0.0779 Training_time=42.5 s 
+INFO:ours:|2024-08-24 19:26:26| Round=2 BestEpoch=274 MAE=0.0002 RMSE=0.0004 NMAE=0.0476 NRMSE=0.0746 Training_time=36.4 s 
+INFO:ours:|2024-08-24 19:29:50| Round=3 BestEpoch=503 MAE=0.0002 RMSE=0.0004 NMAE=0.0429 NRMSE=0.0692 Training_time=66.8 s 
+INFO:ours:|2024-08-24 19:32:41| Round=4 BestEpoch=404 MAE=0.0002 RMSE=0.0004 NMAE=0.0470 NRMSE=0.0738 Training_time=53.8 s 
+INFO:ours:|2024-08-24 19:34:32| Round=5 BestEpoch=225 MAE=0.0002 RMSE=0.0004 NMAE=0.0505 NRMSE=0.0772 Training_time=29.9 s 
+INFO:ours:|2024-08-24 19:34:32| ********************Experiment Results:********************
+INFO:ours:|2024-08-24 19:34:32| MAE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-24 19:34:32| RMSE: 0.0004 ± 0.0000
+INFO:ours:|2024-08-24 19:34:32| NMAE: 0.0472 ± 0.0025
+INFO:ours:|2024-08-24 19:34:32| NRMSE: 0.0745 ± 0.0031
+INFO:ours:|2024-08-24 19:34:32| Acc_1: 0.2459 ± 0.0304
+INFO:ours:|2024-08-24 19:34:32| Acc_5: 0.7026 ± 0.0260
+INFO:ours:|2024-08-24 19:34:32| Acc_10: 0.8950 ± 0.0105
+INFO:ours:|2024-08-24 19:34:32| ********************Experiment Success********************

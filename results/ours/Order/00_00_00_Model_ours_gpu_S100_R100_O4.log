@@ -1,0 +1,19 @@
+INFO:ours:|2024-08-23 21:53:27| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': gpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cpu, 'device_name': 1080Ti,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 100,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-gpu-gtx-1080ti-fp32, 'train_size': 100,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-23 21:53:27| ********************Experiment Start********************
+INFO:openai:error_code=None error_message='主账户可用余额不足，本次请求需要可用余额大于 0.00 元才能完成，您的可用余额为 -0.00249708 元(请求预冻结 0.0039375 元)，请充值后再使用，或降低并发和指定更小的max_tokens参数来降低余额要求' error_param=None error_type=error message='OpenAI API error received' stream_error=False
+INFO:ours:|2024-08-23 21:53:27| Run 0 Error: 主账户可用余额不足，本次请求需要可用余额大于 0.00 元才能完成，您的可用余额为 -0.00249708 元(请求预冻结 0.0039375 元)，请充值后再使用，或降低并发和指定更小的max_tokens参数来降低余额要求, This run will be skipped.
+INFO:openai:error_code=None error_message='主账户可用余额不足，本次请求需要可用余额大于 0.00 元才能完成，您的可用余额为 -0.00249708 元(请求预冻结 0.0039375 元)，请充值后再使用，或降低并发和指定更小的max_tokens参数来降低余额要求' error_param=None error_type=error message='OpenAI API error received' stream_error=False
+INFO:ours:|2024-08-23 21:53:28| Run 1 Error: 主账户可用余额不足，本次请求需要可用余额大于 0.00 元才能完成，您的可用余额为 -0.00249708 元(请求预冻结 0.0039375 元)，请充值后再使用，或降低并发和指定更小的max_tokens参数来降低余额要求, This run will be skipped.
+INFO:openai:error_code=None error_message='主账户可用余额不足，本次请求需要可用余额大于 0.00 元才能完成，您的可用余额为 -0.00249708 元(请求预冻结 0.0039375 元)，请充值后再使用，或降低并发和指定更小的max_tokens参数来降低余额要求' error_param=None error_type=error message='OpenAI API error received' stream_error=False
+INFO:ours:|2024-08-23 21:53:28| Run 2 Error: 主账户可用余额不足，本次请求需要可用余额大于 0.00 元才能完成，您的可用余额为 -0.00249708 元(请求预冻结 0.0039375 元)，请充值后再使用，或降低并发和指定更小的max_tokens参数来降低余额要求, This run will be skipped.
+INFO:openai:error_code=None error_message='主账户可用余额不足，本次请求需要可用余额大于 0.00 元才能完成，您的可用余额为 -0.00249708 元(请求预冻结 0.0039375 元)，请充值后再使用，或降低并发和指定更小的max_tokens参数来降低余额要求' error_param=None error_type=error message='OpenAI API error received' stream_error=False
+INFO:ours:|2024-08-23 21:53:28| Run 3 Error: 主账户可用余额不足，本次请求需要可用余额大于 0.00 元才能完成，您的可用余额为 -0.00249708 元(请求预冻结 0.0039375 元)，请充值后再使用，或降低并发和指定更小的max_tokens参数来降低余额要求, This run will be skipped.

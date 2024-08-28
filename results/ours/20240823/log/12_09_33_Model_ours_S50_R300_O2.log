@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-23 12:09:33| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 2, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 300,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 50,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-23 12:09:33| ********************Experiment Start********************
+INFO:ours:|2024-08-23 12:09:35| MAE=0.0004 RMSE=0.0005 NMAE=0.0760 NRMSE=0.1029
+INFO:ours:|2024-08-23 12:09:36| MAE=0.0003 RMSE=0.0005 NMAE=0.0668 NRMSE=0.0902
+INFO:ours:|2024-08-23 12:09:37| MAE=0.0003 RMSE=0.0005 NMAE=0.0660 NRMSE=0.0891
+INFO:ours:|2024-08-23 12:09:38| MAE=0.0003 RMSE=0.0005 NMAE=0.0694 NRMSE=0.0923
+INFO:ours:|2024-08-23 12:09:39| MAE=0.0003 RMSE=0.0005 NMAE=0.0660 NRMSE=0.0891
+INFO:ours:|2024-08-23 12:09:39| ********************Experiment Results:********************
+INFO:ours:|2024-08-23 12:09:39| MAE: 0.0003 ± 0.0000
+INFO:ours:|2024-08-23 12:09:39| RMSE: 0.0005 ± 0.0000
+INFO:ours:|2024-08-23 12:09:39| NMAE: 0.0688 ± 0.0038
+INFO:ours:|2024-08-23 12:09:39| NRMSE: 0.0927 ± 0.0052
+INFO:ours:|2024-08-23 12:09:39| Acc_1: 0.1104 ± 0.0056
+INFO:ours:|2024-08-23 12:09:39| Acc_5: 0.4895 ± 0.0194
+INFO:ours:|2024-08-23 12:09:39| Acc_10: 0.7629 ± 0.0215
+INFO:ours:|2024-08-23 12:09:39| ********************Experiment Success********************

@@ -1,0 +1,18 @@
+INFO:gru:|2024-08-18 00:53:24| {'classification': False, 'visualize': True, 'inductive': False, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 900, 'density': 0.8, 'logger': 'None', 'model': 'gru', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 10, 'epochs': 1000, 'patience': 100, 'verbose': 0, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'train_device': 'desktop-cpu-core-i7-7820x-fp32', 'device_name': 'core-i7-7820x', 'log': <utils.logger.Logger object at 0x13240598fca0>}
+INFO:gru:|2024-08-18 00:53:24| ********************Experiment Start********************
+INFO:gru:|2024-08-18 00:54:44| Round=1 BestEpoch=757 MAE=0.0002 RMSE=0.0003 NMAE=0.0508 NRMSE=0.0635 Training_time=40.9 s 
+INFO:gru:|2024-08-18 00:54:44| Acc = [1%=0.1407, 5%=0.5912, 10%=0.8220] 
+INFO:gru:|2024-08-18 00:56:00| Round=2 BestEpoch=737 MAE=0.0003 RMSE=0.0004 NMAE=0.0539 NRMSE=0.0679 Training_time=39.8 s 
+INFO:gru:|2024-08-18 00:56:00| Acc = [1%=0.1359, 5%=0.5713, 10%=0.8160] 
+INFO:gru:|2024-08-18 00:56:59| Round=3 BestEpoch=538 MAE=0.0002 RMSE=0.0003 NMAE=0.0472 NRMSE=0.0594 Training_time=29.1 s 
+INFO:gru:|2024-08-18 00:56:59| Acc = [1%=0.1516, 5%=0.6124, 10%=0.8474] 
+INFO:gru:|2024-08-18 00:57:50| Round=4 BestEpoch=454 MAE=0.0003 RMSE=0.0004 NMAE=0.0562 NRMSE=0.0711 Training_time=24.5 s 
+INFO:gru:|2024-08-18 00:57:50| Acc = [1%=0.1288, 5%=0.5530, 10%=0.7985] 
+INFO:gru:|2024-08-18 00:58:39| Round=5 BestEpoch=439 MAE=0.0002 RMSE=0.0003 NMAE=0.0497 NRMSE=0.0630 Training_time=23.8 s 
+INFO:gru:|2024-08-18 00:58:39| Acc = [1%=0.1459, 5%=0.6003, 10%=0.8326] 
+INFO:gru:|2024-08-18 00:59:32| Round=6 BestEpoch=476 MAE=0.0002 RMSE=0.0003 NMAE=0.0496 NRMSE=0.0615 Training_time=25.8 s 
+INFO:gru:|2024-08-18 00:59:32| Acc = [1%=0.1470, 5%=0.6014, 10%=0.8235] 
+INFO:gru:|2024-08-18 01:00:31| Round=7 BestEpoch=535 MAE=0.0003 RMSE=0.0003 NMAE=0.0523 NRMSE=0.0668 Training_time=29.0 s 
+INFO:gru:|2024-08-18 01:00:31| Acc = [1%=0.1427, 5%=0.5847, 10%=0.8136] 
+INFO:gru:|2024-08-18 01:01:23| Round=8 BestEpoch=469 MAE=0.0002 RMSE=0.0003 NMAE=0.0466 NRMSE=0.0571 Training_time=25.2 s 
+INFO:gru:|2024-08-18 01:01:23| Acc = [1%=0.1511, 5%=0.6122, 10%=0.8478] 

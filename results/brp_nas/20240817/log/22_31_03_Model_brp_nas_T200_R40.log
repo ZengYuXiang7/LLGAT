@@ -1,0 +1,31 @@
+INFO:brp_nas:|2024-08-17 22:31:03| {'classification': False, 'visualize': True, 'inductive': False, 'bs': 1, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 200, 'density': 0.8, 'logger': 'None', 'model': 'brp_nas', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 10, 'epochs': 1000, 'patience': 100, 'verbose': 0, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'train_device': 'desktop-cpu-core-i7-7820x-fp32', 'device_name': 'core-i7-7820x', 'log': <utils.logger.Logger object at 0x9dce08a8ca0>}
+INFO:brp_nas:|2024-08-17 22:31:03| ********************Experiment Start********************
+INFO:brp_nas:|2024-08-17 22:33:09| Round=1 BestEpoch=193 MAE=0.0003 RMSE=0.0004 NMAE=0.0571 NRMSE=0.0846 Training_time=53.8 s 
+INFO:brp_nas:|2024-08-17 22:33:09| Acc = [1%=0.1791, 5%=0.6229, 10%=0.8019] 
+INFO:brp_nas:|2024-08-17 22:35:25| Round=2 BestEpoch=218 MAE=0.0003 RMSE=0.0004 NMAE=0.0578 NRMSE=0.0825 Training_time=60.9 s 
+INFO:brp_nas:|2024-08-17 22:35:25| Acc = [1%=0.1904, 5%=0.5870, 10%=0.8158] 
+INFO:brp_nas:|2024-08-17 22:37:21| Round=3 BestEpoch=172 MAE=0.0003 RMSE=0.0005 NMAE=0.0613 NRMSE=0.0987 Training_time=47.7 s 
+INFO:brp_nas:|2024-08-17 22:37:21| Acc = [1%=0.1888, 5%=0.6215, 10%=0.8373] 
+INFO:brp_nas:|2024-08-17 22:41:30| Round=4 BestEpoch=483 MAE=0.0003 RMSE=0.0004 NMAE=0.0525 NRMSE=0.0798 Training_time=135.3 s 
+INFO:brp_nas:|2024-08-17 22:41:30| Acc = [1%=0.2229, 5%=0.6367, 10%=0.8545] 
+INFO:brp_nas:|2024-08-17 22:43:37| Round=5 BestEpoch=195 MAE=0.0003 RMSE=0.0005 NMAE=0.0594 NRMSE=0.0891 Training_time=54.5 s 
+INFO:brp_nas:|2024-08-17 22:43:37| Acc = [1%=0.1839, 5%=0.6059, 10%=0.8093] 
+INFO:brp_nas:|2024-08-17 22:46:27| Round=6 BestEpoch=298 MAE=0.0003 RMSE=0.0004 NMAE=0.0590 NRMSE=0.0849 Training_time=83.2 s 
+INFO:brp_nas:|2024-08-17 22:46:27| Acc = [1%=0.1899, 5%=0.5995, 10%=0.7989] 
+INFO:brp_nas:|2024-08-17 22:50:42| Round=7 BestEpoch=496 MAE=0.0003 RMSE=0.0005 NMAE=0.0615 NRMSE=0.0938 Training_time=138.8 s 
+INFO:brp_nas:|2024-08-17 22:50:42| Acc = [1%=0.2144, 5%=0.6025, 10%=0.8065] 
+INFO:brp_nas:|2024-08-17 22:53:12| Round=8 BestEpoch=250 MAE=0.0003 RMSE=0.0005 NMAE=0.0609 NRMSE=0.0898 Training_time=70.2 s 
+INFO:brp_nas:|2024-08-17 22:53:12| Acc = [1%=0.1778, 5%=0.5872, 10%=0.7958] 
+INFO:brp_nas:|2024-08-17 22:55:34| Round=9 BestEpoch=233 MAE=0.0003 RMSE=0.0005 NMAE=0.0633 NRMSE=0.0900 Training_time=65.2 s 
+INFO:brp_nas:|2024-08-17 22:55:34| Acc = [1%=0.1377, 5%=0.5564, 10%=0.8029] 
+INFO:brp_nas:|2024-08-17 22:58:59| Round=10 BestEpoch=378 MAE=0.0003 RMSE=0.0005 NMAE=0.0712 NRMSE=0.1031 Training_time=105.8 s 
+INFO:brp_nas:|2024-08-17 22:58:59| Acc = [1%=0.1785, 5%=0.5471, 10%=0.7576] 
+INFO:brp_nas:|2024-08-17 22:58:59| ********************Experiment Results:********************
+INFO:brp_nas:|2024-08-17 22:58:59| MAE: 0.0003 ± 0.0000
+INFO:brp_nas:|2024-08-17 22:58:59| RMSE: 0.0005 ± 0.0000
+INFO:brp_nas:|2024-08-17 22:58:59| NMAE: 0.0604 ± 0.0046
+INFO:brp_nas:|2024-08-17 22:58:59| NRMSE: 0.0896 ± 0.0069
+INFO:brp_nas:|2024-08-17 22:58:59| Acc_1: 0.1863 ± 0.0217
+INFO:brp_nas:|2024-08-17 22:58:59| Acc_5: 0.5967 ± 0.0270
+INFO:brp_nas:|2024-08-17 22:58:59| Acc_10: 0.8081 ± 0.0243
+INFO:brp_nas:|2024-08-17 22:58:59| ********************Experiment Success********************

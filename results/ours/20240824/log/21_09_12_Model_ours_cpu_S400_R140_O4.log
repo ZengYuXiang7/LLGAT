@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-24 21:09:12| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 140,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 400,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-24 21:09:12| ********************Experiment Start********************
+INFO:ours:|2024-08-24 21:11:32| Round=1 BestEpoch=283 MAE=0.0002 RMSE=0.0003 NMAE=0.0312 NRMSE=0.0507 Training_time=45.8 s 
+INFO:ours:|2024-08-24 21:14:10| Round=2 BestEpoch=333 MAE=0.0001 RMSE=0.0002 NMAE=0.0297 NRMSE=0.0457 Training_time=53.3 s 
+INFO:ours:|2024-08-24 21:17:30| Round=3 BestEpoch=439 MAE=0.0002 RMSE=0.0003 NMAE=0.0328 NRMSE=0.0594 Training_time=70.9 s 
+INFO:ours:|2024-08-24 21:19:55| Run 3 Error: DataLoader worker (pid(s) 1968989) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-24 21:23:42| Run 4 Error: DataLoader worker (pid(s) 2002072) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-24 21:23:42| ********************Experiment Results:********************
+INFO:ours:|2024-08-24 21:23:42| MAE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-24 21:23:42| RMSE: 0.0003 ± 0.0000
+INFO:ours:|2024-08-24 21:23:42| NMAE: 0.0312 ± 0.0013
+INFO:ours:|2024-08-24 21:23:42| NRMSE: 0.0519 ± 0.0056
+INFO:ours:|2024-08-24 21:23:42| Acc_1: 0.3576 ± 0.0196
+INFO:ours:|2024-08-24 21:23:42| Acc_5: 0.8303 ± 0.0016
+INFO:ours:|2024-08-24 21:23:42| Acc_10: 0.9502 ± 0.0090
+INFO:ours:|2024-08-24 21:23:42| ********************Experiment Success********************

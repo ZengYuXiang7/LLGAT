@@ -1,0 +1,31 @@
+INFO:birnn:|2024-08-17 21:55:02| {'classification': False, 'visualize': True, 'inductive': False, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 50, 'density': 0.8, 'logger': 'None', 'model': 'birnn', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 10, 'epochs': 1000, 'patience': 100, 'verbose': 0, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'train_device': 'desktop-cpu-core-i7-7820x-fp32', 'device_name': 'core-i7-7820x', 'log': <utils.logger.Logger object at 0x134b6b18fca0>}
+INFO:birnn:|2024-08-17 21:55:02| ********************Experiment Start********************
+INFO:birnn:|2024-08-17 21:55:11| Round=1 BestEpoch= 28 MAE=0.0008 RMSE=0.0010 NMAE=0.1534 NRMSE=0.1866 Training_time=0.9 s 
+INFO:birnn:|2024-08-17 21:55:11| Acc = [1%=0.0470, 5%=0.2229, 10%=0.4201] 
+INFO:birnn:|2024-08-17 21:55:21| Round=2 BestEpoch= 44 MAE=0.0007 RMSE=0.0009 NMAE=0.1495 NRMSE=0.1787 Training_time=1.3 s 
+INFO:birnn:|2024-08-17 21:55:21| Acc = [1%=0.0456, 5%=0.2157, 10%=0.4157] 
+INFO:birnn:|2024-08-17 21:55:33| Round=3 BestEpoch= 81 MAE=0.0007 RMSE=0.0010 NMAE=0.1531 NRMSE=0.1895 Training_time=2.4 s 
+INFO:birnn:|2024-08-17 21:55:33| Acc = [1%=0.0473, 5%=0.2343, 10%=0.4427] 
+INFO:birnn:|2024-08-17 21:55:43| Round=4 BestEpoch= 53 MAE=0.0007 RMSE=0.0009 NMAE=0.1402 NRMSE=0.1716 Training_time=1.5 s 
+INFO:birnn:|2024-08-17 21:55:43| Acc = [1%=0.0506, 5%=0.2483, 10%=0.4573] 
+INFO:birnn:|2024-08-17 21:55:53| Round=5 BestEpoch= 45 MAE=0.0008 RMSE=0.0010 NMAE=0.1629 NRMSE=0.1990 Training_time=1.3 s 
+INFO:birnn:|2024-08-17 21:55:53| Acc = [1%=0.0420, 5%=0.2164, 10%=0.4051] 
+INFO:birnn:|2024-08-17 21:56:04| Round=6 BestEpoch= 63 MAE=0.0008 RMSE=0.0010 NMAE=0.1659 NRMSE=0.1976 Training_time=1.8 s 
+INFO:birnn:|2024-08-17 21:56:04| Acc = [1%=0.0363, 5%=0.1977, 10%=0.3699] 
+INFO:birnn:|2024-08-17 21:56:32| Round=7 BestEpoch=324 MAE=0.0007 RMSE=0.0010 NMAE=0.1519 NRMSE=0.1910 Training_time=9.5 s 
+INFO:birnn:|2024-08-17 21:56:32| Acc = [1%=0.0513, 5%=0.2398, 10%=0.4609] 
+INFO:birnn:|2024-08-17 21:56:42| Round=8 BestEpoch= 40 MAE=0.0008 RMSE=0.0011 NMAE=0.1694 NRMSE=0.2065 Training_time=1.2 s 
+INFO:birnn:|2024-08-17 21:56:42| Acc = [1%=0.0401, 5%=0.2047, 10%=0.3863] 
+INFO:birnn:|2024-08-17 21:56:53| Round=9 BestEpoch= 67 MAE=0.0007 RMSE=0.0009 NMAE=0.1429 NRMSE=0.1768 Training_time=2.0 s 
+INFO:birnn:|2024-08-17 21:56:53| Acc = [1%=0.0527, 5%=0.2479, 10%=0.4617] 
+INFO:birnn:|2024-08-17 21:57:30| Round=10 BestEpoch=454 MAE=0.0007 RMSE=0.0009 NMAE=0.1387 NRMSE=0.1679 Training_time=13.3 s 
+INFO:birnn:|2024-08-17 21:57:30| Acc = [1%=0.0477, 5%=0.2394, 10%=0.4563] 
+INFO:birnn:|2024-08-17 21:57:30| ********************Experiment Results:********************
+INFO:birnn:|2024-08-17 21:57:30| MAE: 0.0007 ± 0.0000
+INFO:birnn:|2024-08-17 21:57:30| RMSE: 0.0010 ± 0.0001
+INFO:birnn:|2024-08-17 21:57:30| NMAE: 0.1528 ± 0.0101
+INFO:birnn:|2024-08-17 21:57:30| NRMSE: 0.1865 ± 0.0120
+INFO:birnn:|2024-08-17 21:57:30| Acc_1: 0.0460 ± 0.0049
+INFO:birnn:|2024-08-17 21:57:30| Acc_5: 0.2267 ± 0.0169
+INFO:birnn:|2024-08-17 21:57:30| Acc_10: 0.4276 ± 0.0315
+INFO:birnn:|2024-08-17 21:57:30| ********************Experiment Success********************

@@ -1,0 +1,21 @@
+INFO:lstm:|2024-07-20 21:56:03| {'classification': False, 'visualize': True, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 200, 'density': 0.8, 'device_name': 'core-i7-7820x', 'logger': 'None', 'model': 'lstm', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 5, 'epochs': 500, 'patience': 50, 'verbose': 1, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'log': <utils.logger.Logger object at 0xf3f447d0c70>}
+INFO:lstm:|2024-07-20 21:56:03| ********************Experiment Start********************
+INFO:lstm:|2024-07-20 21:56:36| Round=1 BestEpoch=351 MAE=0.0006 RMSE=0.0008 NMAE=0.1195 NRMSE=0.1498 Training_time=14.5 s 
+INFO:lstm:|2024-07-20 21:56:36| Acc = [1%=0.0599, 5%=0.2904, 10%=0.5287] 
+INFO:lstm:|2024-07-20 21:57:02| Round=2 BestEpoch=263 MAE=0.0006 RMSE=0.0008 NMAE=0.1232 NRMSE=0.1546 Training_time=10.8 s 
+INFO:lstm:|2024-07-20 21:57:02| Acc = [1%=0.0635, 5%=0.2998, 10%=0.5244] 
+INFO:lstm:|2024-07-20 21:57:35| Round=3 BestEpoch=364 MAE=0.0006 RMSE=0.0008 NMAE=0.1182 NRMSE=0.1474 Training_time=15.0 s 
+INFO:lstm:|2024-07-20 21:57:35| Acc = [1%=0.0613, 5%=0.2998, 10%=0.5385] 
+INFO:lstm:|2024-07-20 21:58:15| Round=4 BestEpoch=466 MAE=0.0006 RMSE=0.0008 NMAE=0.1148 NRMSE=0.1446 Training_time=19.2 s 
+INFO:lstm:|2024-07-20 21:58:15| Acc = [1%=0.0658, 5%=0.3099, 10%=0.5580] 
+INFO:lstm:|2024-07-20 21:58:27| Round=5 BestEpoch= 93 MAE=0.0006 RMSE=0.0008 NMAE=0.1242 NRMSE=0.1565 Training_time=3.8 s 
+INFO:lstm:|2024-07-20 21:58:27| Acc = [1%=0.0603, 5%=0.3022, 10%=0.5282] 
+INFO:lstm:|2024-07-20 21:58:27| ********************Experiment Results:********************
+INFO:lstm:|2024-07-20 21:58:27| MAE: 0.0006 ± 0.0000
+INFO:lstm:|2024-07-20 21:58:27| RMSE: 0.0008 ± 0.0000
+INFO:lstm:|2024-07-20 21:58:27| NMAE: 0.1200 ± 0.0034
+INFO:lstm:|2024-07-20 21:58:27| NRMSE: 0.1506 ± 0.0044
+INFO:lstm:|2024-07-20 21:58:27| Acc_1: 0.0622 ± 0.0022
+INFO:lstm:|2024-07-20 21:58:27| Acc_5: 0.3004 ± 0.0062
+INFO:lstm:|2024-07-20 21:58:27| Acc_10: 0.5356 ± 0.0121
+INFO:lstm:|2024-07-20 21:58:27| ********************Experiment Success********************

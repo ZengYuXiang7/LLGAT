@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-25 01:04:55| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 200,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 900,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-25 01:04:55| ********************Experiment Start********************
+INFO:ours:|2024-08-25 01:05:01| Run 0 Error: DataLoader worker (pid(s) 3803434) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 01:05:47| Run 1 Error: DataLoader worker (pid(s) 3808576) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 01:10:40| Round=3 BestEpoch=540 MAE=0.0001 RMSE=0.0002 NMAE=0.0237 NRMSE=0.0412 Training_time=136.7 s 
+INFO:ours:|2024-08-25 01:14:46| Round=4 BestEpoch=429 MAE=0.0001 RMSE=0.0002 NMAE=0.0225 NRMSE=0.0362 Training_time=109.3 s 
+INFO:ours:|2024-08-25 01:15:37| Run 4 Error: DataLoader worker (pid(s) 3877354) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 01:15:37| ********************Experiment Results:********************
+INFO:ours:|2024-08-25 01:15:37| MAE: 0.0001 ± 0.0000
+INFO:ours:|2024-08-25 01:15:37| RMSE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-25 01:15:37| NMAE: 0.0231 ± 0.0006
+INFO:ours:|2024-08-25 01:15:37| NRMSE: 0.0387 ± 0.0025
+INFO:ours:|2024-08-25 01:15:37| Acc_1: 0.4347 ± 0.0095
+INFO:ours:|2024-08-25 01:15:37| Acc_5: 0.8916 ± 0.0030
+INFO:ours:|2024-08-25 01:15:37| Acc_10: 0.9718 ± 0.0028
+INFO:ours:|2024-08-25 01:15:37| ********************Experiment Success********************

@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-24 15:19:32| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': one_hot, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 100,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 400,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-24 15:19:32| ********************Experiment Start********************
+INFO:ours:|2024-08-24 15:24:05| Round=1 BestEpoch=602 MAE=0.0002 RMSE=0.0004 NMAE=0.0444 NRMSE=0.0775 Training_time=108.6 s 
+INFO:ours:|2024-08-24 15:27:38| Round=2 BestEpoch=445 MAE=0.0002 RMSE=0.0004 NMAE=0.0469 NRMSE=0.0761 Training_time=80.4 s 
+INFO:ours:|2024-08-24 15:31:24| Round=3 BestEpoch=481 MAE=0.0002 RMSE=0.0004 NMAE=0.0439 NRMSE=0.0751 Training_time=86.4 s 
+INFO:ours:|2024-08-24 15:33:48| Round=4 BestEpoch=270 MAE=0.0002 RMSE=0.0004 NMAE=0.0473 NRMSE=0.0808 Training_time=48.6 s 
+INFO:ours:|2024-08-24 15:37:52| Round=5 BestEpoch=526 MAE=0.0002 RMSE=0.0004 NMAE=0.0404 NRMSE=0.0699 Training_time=94.2 s 
+INFO:ours:|2024-08-24 15:37:52| ********************Experiment Results:********************
+INFO:ours:|2024-08-24 15:37:52| MAE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-24 15:37:52| RMSE: 0.0004 ± 0.0000
+INFO:ours:|2024-08-24 15:37:52| NMAE: 0.0446 ± 0.0025
+INFO:ours:|2024-08-24 15:37:52| NRMSE: 0.0759 ± 0.0036
+INFO:ours:|2024-08-24 15:37:52| Acc_1: 0.2984 ± 0.0229
+INFO:ours:|2024-08-24 15:37:52| Acc_5: 0.7465 ± 0.0142
+INFO:ours:|2024-08-24 15:37:52| Acc_10: 0.9011 ± 0.0094
+INFO:ours:|2024-08-24 15:37:52| ********************Experiment Success********************

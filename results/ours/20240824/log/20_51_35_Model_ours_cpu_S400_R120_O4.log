@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-24 20:51:35| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 120,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 400,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-24 20:51:35| ********************Experiment Start********************
+INFO:ours:|2024-08-24 20:54:54| Round=1 BestEpoch=449 MAE=0.0002 RMSE=0.0003 NMAE=0.0367 NRMSE=0.0627 Training_time=71.8 s 
+INFO:ours:|2024-08-24 20:59:28| Round=2 BestEpoch=665 MAE=0.0002 RMSE=0.0003 NMAE=0.0317 NRMSE=0.0500 Training_time=105.7 s 
+INFO:ours:|2024-08-24 21:03:20| Round=3 BestEpoch=540 MAE=0.0002 RMSE=0.0003 NMAE=0.0335 NRMSE=0.0594 Training_time=86.6 s 
+INFO:ours:|2024-08-24 21:07:04| Round=4 BestEpoch=514 MAE=0.0001 RMSE=0.0003 NMAE=0.0301 NRMSE=0.0483 Training_time=82.2 s 
+INFO:ours:|2024-08-24 21:09:09| Round=5 BestEpoch=243 MAE=0.0002 RMSE=0.0004 NMAE=0.0402 NRMSE=0.0704 Training_time=38.9 s 
+INFO:ours:|2024-08-24 21:09:09| ********************Experiment Results:********************
+INFO:ours:|2024-08-24 21:09:09| MAE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-24 21:09:09| RMSE: 0.0003 ± 0.0000
+INFO:ours:|2024-08-24 21:09:09| NMAE: 0.0344 ± 0.0036
+INFO:ours:|2024-08-24 21:09:09| NRMSE: 0.0582 ± 0.0082
+INFO:ours:|2024-08-24 21:09:09| Acc_1: 0.3480 ± 0.0212
+INFO:ours:|2024-08-24 21:09:09| Acc_5: 0.8086 ± 0.0207
+INFO:ours:|2024-08-24 21:09:09| Acc_10: 0.9364 ± 0.0135
+INFO:ours:|2024-08-24 21:09:09| ********************Experiment Success********************

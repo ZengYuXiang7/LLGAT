@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-25 18:30:22| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': gpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': 1080Ti,
+     'epochs': 1000, 'experiment': False, 'graph_encoder': gat, 'heads': 8, 'inductive': False,
+     'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001, 'model': ours,
+     'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW, 'order': 3,
+     'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 80, 'record': True,
+     'rounds': 5, 'seed': 0, 'train_device': desktop-gpu-gtx-1080ti-fp32, 'train_size': 400, 'verbose': 0,
+     'visualize': True,
+}
+INFO:ours:|2024-08-25 18:30:22| ********************Experiment Start********************
+INFO:ours:|2024-08-25 18:30:24| MAE=0.0001 RMSE=0.0002 NMAE=0.0307 NRMSE=0.0468
+INFO:ours:|2024-08-25 18:30:25| MAE=0.0002 RMSE=0.0004 NMAE=0.0396 NRMSE=0.0689
+INFO:ours:|2024-08-25 18:30:26| MAE=0.0002 RMSE=0.0003 NMAE=0.0371 NRMSE=0.0577
+INFO:ours:|2024-08-25 18:30:27| MAE=0.0001 RMSE=0.0002 NMAE=0.0295 NRMSE=0.0438
+INFO:ours:|2024-08-25 18:30:28| MAE=0.0002 RMSE=0.0003 NMAE=0.0377 NRMSE=0.0621
+INFO:ours:|2024-08-25 18:30:28| ********************Experiment Results:********************
+INFO:ours:|2024-08-25 18:30:28| MAE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-25 18:30:28| RMSE: 0.0003 ± 0.0000
+INFO:ours:|2024-08-25 18:30:28| NMAE: 0.0349 ± 0.0041
+INFO:ours:|2024-08-25 18:30:28| NRMSE: 0.0559 ± 0.0094
+INFO:ours:|2024-08-25 18:30:28| Acc_1: 0.2624 ± 0.0151
+INFO:ours:|2024-08-25 18:30:28| Acc_5: 0.8090 ± 0.0219
+INFO:ours:|2024-08-25 18:30:28| Acc_10: 0.9419 ± 0.0162
+INFO:ours:|2024-08-25 18:30:28| ********************Experiment Success********************

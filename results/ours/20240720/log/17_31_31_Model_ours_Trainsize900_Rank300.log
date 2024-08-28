@@ -1,0 +1,21 @@
+INFO:ours:|2024-07-20 17:31:31| {'classification': False, 'visualize': True, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 900, 'density': 0.8, 'device_name': 'core-i7-7820x', 'logger': 'None', 'model': 'ours', 'rank': 300, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 5, 'epochs': 300, 'patience': 50, 'verbose': 1, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'llm': 1, 'log': <utils.logger.Logger object at 0xb2d66b90c70>}
+INFO:ours:|2024-07-20 17:31:31| ********************Experiment Start********************
+INFO:ours:|2024-07-20 17:33:30| Round=1 BestEpoch=270 MAE=0.0001 RMSE=0.0002 NMAE=0.0255 NRMSE=0.0386 Training_time=45.7 s 
+INFO:ours:|2024-07-20 17:33:30| Acc = [1%=0.3214, 5%=0.8692, 10%=0.9664] 
+INFO:ours:|2024-07-20 17:35:29| Round=2 BestEpoch=261 MAE=0.0001 RMSE=0.0002 NMAE=0.0253 NRMSE=0.0397 Training_time=43.9 s 
+INFO:ours:|2024-07-20 17:35:29| Acc = [1%=0.3732, 5%=0.8770, 10%=0.9673] 
+INFO:ours:|2024-07-20 17:37:38| Round=3 BestEpoch=276 MAE=0.0001 RMSE=0.0002 NMAE=0.0248 NRMSE=0.0387 Training_time=48.4 s 
+INFO:ours:|2024-07-20 17:37:38| Acc = [1%=0.3895, 5%=0.8810, 10%=0.9690] 
+INFO:ours:|2024-07-20 17:39:36| Round=4 BestEpoch=276 MAE=0.0001 RMSE=0.0002 NMAE=0.0245 NRMSE=0.0387 Training_time=46.5 s 
+INFO:ours:|2024-07-20 17:39:36| Acc = [1%=0.4118, 5%=0.8808, 10%=0.9642] 
+INFO:ours:|2024-07-20 17:41:34| Round=5 BestEpoch=282 MAE=0.0001 RMSE=0.0002 NMAE=0.0253 NRMSE=0.0402 Training_time=47.5 s 
+INFO:ours:|2024-07-20 17:41:34| Acc = [1%=0.3741, 5%=0.8672, 10%=0.9638] 
+INFO:ours:|2024-07-20 17:41:34| ********************Experiment Results:********************
+INFO:ours:|2024-07-20 17:41:34| MAE: 0.0001 ± 0.0000
+INFO:ours:|2024-07-20 17:41:34| RMSE: 0.0002 ± 0.0000
+INFO:ours:|2024-07-20 17:41:34| NMAE: 0.0251 ± 0.0004
+INFO:ours:|2024-07-20 17:41:34| NRMSE: 0.0392 ± 0.0006
+INFO:ours:|2024-07-20 17:41:34| Acc_1: 0.3740 ± 0.0298
+INFO:ours:|2024-07-20 17:41:34| Acc_5: 0.8750 ± 0.0058
+INFO:ours:|2024-07-20 17:41:34| Acc_10: 0.9661 ± 0.0019
+INFO:ours:|2024-07-20 17:41:34| ********************Experiment Success********************

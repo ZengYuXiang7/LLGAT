@@ -1,0 +1,21 @@
+INFO:birnn:|2024-07-20 23:32:31| {'classification': False, 'visualize': True, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 900, 'density': 0.8, 'device_name': 'core-i7-7820x', 'logger': 'None', 'model': 'birnn', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 5, 'epochs': 500, 'patience': 50, 'verbose': 1, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'log': <utils.logger.Logger object at 0xea01a590c70>}
+INFO:birnn:|2024-07-20 23:32:31| ********************Experiment Start********************
+INFO:birnn:|2024-07-20 23:33:04| Round=1 BestEpoch=262 MAE=0.0002 RMSE=0.0003 NMAE=0.0490 NRMSE=0.0628 Training_time=16.5 s 
+INFO:birnn:|2024-07-20 23:33:04| Acc = [1%=0.1536, 5%=0.6154, 10%=0.8346] 
+INFO:birnn:|2024-07-20 23:33:31| Round=2 BestEpoch=223 MAE=0.0002 RMSE=0.0003 NMAE=0.0478 NRMSE=0.0611 Training_time=13.9 s 
+INFO:birnn:|2024-07-20 23:33:31| Acc = [1%=0.1493, 5%=0.6269, 10%=0.8487] 
+INFO:birnn:|2024-07-20 23:33:50| Round=3 BestEpoch=141 MAE=0.0002 RMSE=0.0003 NMAE=0.0493 NRMSE=0.0625 Training_time=8.8 s 
+INFO:birnn:|2024-07-20 23:33:50| Acc = [1%=0.1479, 5%=0.6039, 10%=0.8410] 
+INFO:birnn:|2024-07-20 23:34:20| Round=4 BestEpoch=244 MAE=0.0002 RMSE=0.0003 NMAE=0.0500 NRMSE=0.0641 Training_time=15.2 s 
+INFO:birnn:|2024-07-20 23:34:20| Acc = [1%=0.1488, 5%=0.6080, 10%=0.8362] 
+INFO:birnn:|2024-07-20 23:34:52| Round=5 BestEpoch=265 MAE=0.0002 RMSE=0.0003 NMAE=0.0492 NRMSE=0.0641 Training_time=16.5 s 
+INFO:birnn:|2024-07-20 23:34:52| Acc = [1%=0.1488, 5%=0.6197, 10%=0.8395] 
+INFO:birnn:|2024-07-20 23:34:52| ********************Experiment Results:********************
+INFO:birnn:|2024-07-20 23:34:52| MAE: 0.0002 ± 0.0000
+INFO:birnn:|2024-07-20 23:34:52| RMSE: 0.0003 ± 0.0000
+INFO:birnn:|2024-07-20 23:34:52| NMAE: 0.0491 ± 0.0007
+INFO:birnn:|2024-07-20 23:34:52| NRMSE: 0.0629 ± 0.0011
+INFO:birnn:|2024-07-20 23:34:52| Acc_1: 0.1497 ± 0.0020
+INFO:birnn:|2024-07-20 23:34:52| Acc_5: 0.6148 ± 0.0082
+INFO:birnn:|2024-07-20 23:34:52| Acc_10: 0.8400 ± 0.0049
+INFO:birnn:|2024-07-20 23:34:52| ********************Experiment Success********************

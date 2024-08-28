@@ -1,0 +1,21 @@
+INFO:ours:|2024-08-01 15:40:38| {'classification': False, 'visualize': True, 'inductive': False, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 100, 'density': 0.8, 'logger': 'None', 'model': 'ours', 'rank': 300, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 5, 'epochs': 1000, 'patience': 100, 'verbose': 0, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'train_device': 'desktop-cpu-core-i7-7820x-fp32', 'device_name': 'core-i7-7820x', 'llm': 1, 'order': 6, 'eval_device': 'desktop-cpu-core-i9-13900k-fp32', 'att': 1, 'cross': 1, 'heads': 6, 'log': <utils.logger.Logger object at 0xe6aebf0fca0>}
+INFO:ours:|2024-08-01 15:40:38| ********************Experiment Start********************
+INFO:ours:|2024-08-01 15:43:22| Round=1 BestEpoch=414 MAE=0.0002 RMSE=0.0003 NMAE=0.0423 NRMSE=0.0587 Training_time=32.7 s 
+INFO:ours:|2024-08-01 15:43:22| Acc = [1%=0.1935, 5%=0.7113, 10%=0.9080] 
+INFO:ours:|2024-08-01 15:46:12| Round=2 BestEpoch=427 MAE=0.0002 RMSE=0.0004 NMAE=0.0489 NRMSE=0.0716 Training_time=34.6 s 
+INFO:ours:|2024-08-01 15:46:12| Acc = [1%=0.1752, 5%=0.6667, 10%=0.8951] 
+INFO:ours:|2024-08-01 15:50:49| Round=3 BestEpoch=759 MAE=0.0004 RMSE=0.0006 NMAE=0.0738 NRMSE=0.1075 Training_time=61.3 s 
+INFO:ours:|2024-08-01 15:50:49| Acc = [1%=0.1500, 5%=0.5519, 10%=0.7663] 
+INFO:ours:|2024-08-01 15:53:50| Round=4 BestEpoch=466 MAE=0.0004 RMSE=0.0006 NMAE=0.0721 NRMSE=0.1077 Training_time=37.3 s 
+INFO:ours:|2024-08-01 15:53:50| Acc = [1%=0.1919, 5%=0.5517, 10%=0.7660] 
+INFO:ours:|2024-08-01 15:56:17| Round=5 BestEpoch=358 MAE=0.0002 RMSE=0.0004 NMAE=0.0512 NRMSE=0.0691 Training_time=28.7 s 
+INFO:ours:|2024-08-01 15:56:17| Acc = [1%=0.1426, 5%=0.6242, 10%=0.8395] 
+INFO:ours:|2024-08-01 15:56:17| ********************Experiment Results:********************
+INFO:ours:|2024-08-01 15:56:17| MAE: 0.0003 ± 0.0001
+INFO:ours:|2024-08-01 15:56:17| RMSE: 0.0004 ± 0.0001
+INFO:ours:|2024-08-01 15:56:17| NMAE: 0.0577 ± 0.0128
+INFO:ours:|2024-08-01 15:56:17| NRMSE: 0.0829 ± 0.0206
+INFO:ours:|2024-08-01 15:56:17| Acc_1: 0.1706 ± 0.0210
+INFO:ours:|2024-08-01 15:56:17| Acc_5: 0.6211 ± 0.0630
+INFO:ours:|2024-08-01 15:56:17| Acc_10: 0.8349 ± 0.0607
+INFO:ours:|2024-08-01 15:56:17| ********************Experiment Success********************

@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-25 01:54:21| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': gpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': 1080Ti,
+     'epochs': 1000, 'experiment': False, 'graph_encoder': gat, 'heads': 8, 'inductive': False,
+     'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001, 'model': ours,
+     'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW, 'order': 3,
+     'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 100, 'record': True,
+     'rounds': 5, 'seed': 0, 'train_device': desktop-gpu-gtx-1080ti-fp32, 'train_size': 100, 'verbose': 0,
+     'visualize': True,
+}
+INFO:ours:|2024-08-25 01:54:21| ********************Experiment Start********************
+INFO:ours:|2024-08-25 01:54:22| MAE=0.0003 RMSE=0.0005 NMAE=0.0636 NRMSE=0.0945
+INFO:ours:|2024-08-25 01:54:23| MAE=0.0003 RMSE=0.0004 NMAE=0.0560 NRMSE=0.0854
+INFO:ours:|2024-08-25 01:56:05| Round=3 BestEpoch=224 MAE=0.0003 RMSE=0.0004 NMAE=0.0567 NRMSE=0.0817 Training_time=24.1 s 
+INFO:ours:|2024-08-25 01:56:13| Run 3 Error: DataLoader worker (pid(s) 18648) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 01:58:15| Round=5 BestEpoch=287 MAE=0.0003 RMSE=0.0005 NMAE=0.0580 NRMSE=0.0921 Training_time=30.7 s 
+INFO:ours:|2024-08-25 01:58:15| ********************Experiment Results:********************
+INFO:ours:|2024-08-25 01:58:15| MAE: 0.0003 ± 0.0000
+INFO:ours:|2024-08-25 01:58:15| RMSE: 0.0005 ± 0.0000
+INFO:ours:|2024-08-25 01:58:15| NMAE: 0.0586 ± 0.0030
+INFO:ours:|2024-08-25 01:58:15| NRMSE: 0.0884 ± 0.0051
+INFO:ours:|2024-08-25 01:58:15| Acc_1: 0.1567 ± 0.0201
+INFO:ours:|2024-08-25 01:58:15| Acc_5: 0.6149 ± 0.0255
+INFO:ours:|2024-08-25 01:58:15| Acc_10: 0.8398 ± 0.0178
+INFO:ours:|2024-08-25 01:58:15| ********************Experiment Success********************

@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-25 07:29:42| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': gpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': 1080Ti,
+     'epochs': 1000, 'experiment': False, 'graph_encoder': gat, 'heads': 8, 'inductive': False,
+     'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001, 'model': ours,
+     'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW, 'order': 3,
+     'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 140, 'record': True,
+     'rounds': 5, 'seed': 0, 'train_device': desktop-gpu-gtx-1080ti-fp32, 'train_size': 500, 'verbose': 0,
+     'visualize': True,
+}
+INFO:ours:|2024-08-25 07:29:42| ********************Experiment Start********************
+INFO:ours:|2024-08-25 07:30:58| Run 0 Error: DataLoader worker (pid(s) 3117551) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 07:31:20| Run 1 Error: DataLoader worker (pid(s) 3120741) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 07:31:51| Run 2 Error: DataLoader worker (pid(s) 3125356) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 07:33:18| Run 3 Error: DataLoader worker (pid(s) 3137608) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 07:36:32| Round=5 BestEpoch=415 MAE=0.0001 RMSE=0.0002 NMAE=0.0253 NRMSE=0.0406 Training_time=69.3 s 
+INFO:ours:|2024-08-25 07:36:32| ********************Experiment Results:********************
+INFO:ours:|2024-08-25 07:36:32| MAE: 0.0001 ± 0.0000
+INFO:ours:|2024-08-25 07:36:32| RMSE: 0.0002 ± 0.0000
+INFO:ours:|2024-08-25 07:36:32| NMAE: 0.0253 ± 0.0000
+INFO:ours:|2024-08-25 07:36:32| NRMSE: 0.0406 ± 0.0000
+INFO:ours:|2024-08-25 07:36:32| Acc_1: 0.3839 ± 0.0000
+INFO:ours:|2024-08-25 07:36:32| Acc_5: 0.8691 ± 0.0000
+INFO:ours:|2024-08-25 07:36:32| Acc_10: 0.9672 ± 0.0000
+INFO:ours:|2024-08-25 07:36:32| ********************Experiment Success********************

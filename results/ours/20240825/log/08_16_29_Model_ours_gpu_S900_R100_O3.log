@@ -1,0 +1,58 @@
+INFO:ours:|2024-08-25 08:16:29| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': gpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': 1080Ti,
+     'epochs': 1000, 'experiment': False, 'graph_encoder': gat, 'heads': 8, 'inductive': False,
+     'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001, 'model': ours,
+     'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW, 'order': 3,
+     'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 100, 'record': True,
+     'rounds': 5, 'seed': 0, 'train_device': desktop-gpu-gtx-1080ti-fp32, 'train_size': 900, 'verbose': 0,
+     'visualize': True,
+}
+INFO:ours:|2024-08-25 08:16:29| ********************Experiment Start********************
+INFO:ours:|2024-08-25 08:16:34| Run 0 Error: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "train_model.py", line 135, in RunOnce
+    model.load_state_dict(torch.load(model_path))
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 998, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 445, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 426, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: './checkpoints/ours/Model_ours_gpu_S900_R100_O3_round_0.pt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rtx4090/Code_python/LLM2024/data.py", line 115, in __getitem__
+    graph = dgl.from_scipy(csr_matrix(graph))
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/scipy/sparse/_compressed.py", line 84, in __init__
+    self._set_self(self.__class__(
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/scipy/sparse/_compressed.py", line 33, in __init__
+    arg1 = arg1.asformat(self.format)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/scipy/sparse/_base.py", line 376, in asformat
+    return convert_method(copy=copy)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/scipy/sparse/_coo.py", line 408, in tocsr
+    x = self._csr_container((data, indices, indptr), shape=self.shape)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/scipy/sparse/_compressed.py", line 106, in __init__
+    self.check_format(full_check=False)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/scipy/sparse/_compressed.py", line 157, in check_format
+    idx_dtype = get_index_dtype((self.indptr, self.indices))
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/scipy/sparse/_sputils.py", line 170, in get_index_dtype
+    int32max = np.int32(np.iinfo(np.int32).max)
+  File "/home/rtx4090/anaconda3/lib/python3.8/site-packages/numpy/core/getlimits.py", line 677, in __init__
+    raise ValueError("Invalid integer data type %r." % (self.kind,))
+ValueError: Invalid integer data type 'O'.
+, This run will be skipped.
+INFO:ours:|2024-08-25 08:17:28| Run 1 Error: DataLoader worker (pid(s) 3489046) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 08:17:42| Run 2 Error: DataLoader worker (pid(s) 3490810) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 08:18:29| Run 3 Error: DataLoader worker (pid(s) 3496623) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 08:18:57| Run 4 Error: DataLoader worker (pid(s) 3500097) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-25 08:18:58| ********************Experiment Results:********************
+INFO:ours:|2024-08-25 08:18:58| ********************Experiment Success********************

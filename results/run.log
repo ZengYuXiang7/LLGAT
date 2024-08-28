@@ -1,0 +1,28 @@
+Running at 2024-08-26 14:06: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 60
+Running at 2024-08-26 14:06: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 80
+Experiment Start!!!
+Running at 2024-08-26 14:16: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 60
+Running at 2024-08-26 14:16: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 80
+Running at 2024-08-26 14:31: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 100
+Running at 2024-08-26 14:35: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 120
+Running at 2024-08-26 14:50: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 140
+Running at 2024-08-26 15:08: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 160
+Running at 2024-08-26 15:28: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 180
+Retrying at 2024-08-26 15:28: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 200
+Retrying at 2024-08-26 15:41: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 300
+Retrying at 2024-08-26 16:01: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 400
+Retrying at 2024-08-26 16:15: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 500
+Retrying at 2024-08-26 16:40: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 60
+Retrying at 2024-08-26 16:40: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 80
+Retrying at 2024-08-26 16:40: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 100
+Retrying at 2024-08-26 16:40: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 120
+Retrying at 2024-08-26 16:40: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 140
+Retrying at 2024-08-26 16:41: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 160
+Retrying at 2024-08-26 17:00: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 180
+Retrying at 2024-08-26 17:20: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 200
+Retrying at 2024-08-26 17:20: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 300
+Retrying at 2024-08-26 17:20: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 400
+Retrying at 2024-08-26 17:26: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 900 --rank 500
+Some commands failed, retrying in 10 seconds...
+Running at 2024-08-26 17:26: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 900 --rank 180
+All commands executed successfully.

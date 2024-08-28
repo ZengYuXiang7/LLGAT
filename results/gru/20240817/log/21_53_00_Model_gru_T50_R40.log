@@ -1,0 +1,31 @@
+INFO:gru:|2024-08-17 21:53:00| {'classification': False, 'visualize': True, 'inductive': False, 'bs': 32, 'lr': 0.001, 'decay': 0.0001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'path': './datasets/', 'dataset': 'cpu', 'train_size': 50, 'density': 0.8, 'logger': 'None', 'model': 'gru', 'rank': 40, 'num_windows': 12, 'num_preds': 1, 'seed': 0, 'rounds': 10, 'epochs': 1000, 'patience': 100, 'verbose': 0, 'device': 'cuda', 'debug': False, 'experiment': False, 'program_test': False, 'record': True, 'train_device': 'desktop-cpu-core-i7-7820x-fp32', 'device_name': 'core-i7-7820x', 'log': <utils.logger.Logger object at 0x140f3330fca0>}
+INFO:gru:|2024-08-17 21:53:00| ********************Experiment Start********************
+INFO:gru:|2024-08-17 21:53:12| Round=1 BestEpoch= 76 MAE=0.0008 RMSE=0.0011 NMAE=0.1735 NRMSE=0.2106 Training_time=2.2 s 
+INFO:gru:|2024-08-17 21:53:12| Acc = [1%=0.0420, 5%=0.1982, 10%=0.3747] 
+INFO:gru:|2024-08-17 21:53:21| Round=2 BestEpoch= 52 MAE=0.0008 RMSE=0.0011 NMAE=0.1721 NRMSE=0.2051 Training_time=1.4 s 
+INFO:gru:|2024-08-17 21:53:21| Acc = [1%=0.0421, 5%=0.1966, 10%=0.3717] 
+INFO:gru:|2024-08-17 21:53:36| Round=3 BestEpoch=124 MAE=0.0008 RMSE=0.0011 NMAE=0.1685 NRMSE=0.2036 Training_time=3.5 s 
+INFO:gru:|2024-08-17 21:53:36| Acc = [1%=0.0422, 5%=0.2044, 10%=0.3852] 
+INFO:gru:|2024-08-17 21:53:47| Round=4 BestEpoch= 64 MAE=0.0009 RMSE=0.0011 NMAE=0.1791 NRMSE=0.2136 Training_time=1.8 s 
+INFO:gru:|2024-08-17 21:53:47| Acc = [1%=0.0358, 5%=0.1785, 10%=0.3493] 
+INFO:gru:|2024-08-17 21:53:57| Round=5 BestEpoch= 57 MAE=0.0008 RMSE=0.0011 NMAE=0.1714 NRMSE=0.2100 Training_time=1.6 s 
+INFO:gru:|2024-08-17 21:53:57| Acc = [1%=0.0425, 5%=0.2028, 10%=0.3905] 
+INFO:gru:|2024-08-17 21:54:08| Round=6 BestEpoch= 75 MAE=0.0009 RMSE=0.0012 NMAE=0.1882 NRMSE=0.2224 Training_time=2.1 s 
+INFO:gru:|2024-08-17 21:54:08| Acc = [1%=0.0322, 5%=0.1674, 10%=0.3278] 
+INFO:gru:|2024-08-17 21:54:21| Round=7 BestEpoch=105 MAE=0.0009 RMSE=0.0012 NMAE=0.1904 NRMSE=0.2391 Training_time=2.9 s 
+INFO:gru:|2024-08-17 21:54:21| Acc = [1%=0.0404, 5%=0.2012, 10%=0.3783] 
+INFO:gru:|2024-08-17 21:54:32| Round=8 BestEpoch= 71 MAE=0.0010 RMSE=0.0012 NMAE=0.2001 NRMSE=0.2384 Training_time=2.0 s 
+INFO:gru:|2024-08-17 21:54:32| Acc = [1%=0.0330, 5%=0.1604, 10%=0.3127] 
+INFO:gru:|2024-08-17 21:54:44| Round=9 BestEpoch= 90 MAE=0.0009 RMSE=0.0011 NMAE=0.1779 NRMSE=0.2218 Training_time=2.5 s 
+INFO:gru:|2024-08-17 21:54:44| Acc = [1%=0.0433, 5%=0.2094, 10%=0.3946] 
+INFO:gru:|2024-08-17 21:55:01| Round=10 BestEpoch=158 MAE=0.0009 RMSE=0.0012 NMAE=0.1912 NRMSE=0.2314 Training_time=4.4 s 
+INFO:gru:|2024-08-17 21:55:01| Acc = [1%=0.0367, 5%=0.1887, 10%=0.3568] 
+INFO:gru:|2024-08-17 21:55:01| ********************Experiment Results:********************
+INFO:gru:|2024-08-17 21:55:01| MAE: 0.0009 ± 0.0000
+INFO:gru:|2024-08-17 21:55:01| RMSE: 0.0011 ± 0.0001
+INFO:gru:|2024-08-17 21:55:01| NMAE: 0.1813 ± 0.0100
+INFO:gru:|2024-08-17 21:55:01| NRMSE: 0.2196 ± 0.0125
+INFO:gru:|2024-08-17 21:55:01| Acc_1: 0.0390 ± 0.0040
+INFO:gru:|2024-08-17 21:55:01| Acc_5: 0.1908 ± 0.0158
+INFO:gru:|2024-08-17 21:55:01| Acc_10: 0.3641 ± 0.0258
+INFO:gru:|2024-08-17 21:55:01| ********************Experiment Success********************

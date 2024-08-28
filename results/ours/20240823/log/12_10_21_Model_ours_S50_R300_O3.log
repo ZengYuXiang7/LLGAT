@@ -1,0 +1,25 @@
+INFO:ours:|2024-08-23 12:10:21| {
+     'att': 0, 'bs': 32, 'classification': False, 'cross': 0, 'dataset': cpu,
+     'debug': False, 'decay': 0.0001, 'density': 0.8, 'device': cuda, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': False, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss, 'lr': 0.001,
+     'model': ours, 'num_preds': 1, 'num_windows': 12, 'op_encoder': embed, 'optim': AdamW,
+     'order': 3, 'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 300,
+     'record': True, 'rounds': 5, 'seed': 0, 'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 50,
+     'verbose': 0, 'visualize': True,
+}
+INFO:ours:|2024-08-23 12:10:21| ********************Experiment Start********************
+INFO:ours:|2024-08-23 12:10:23| MAE=0.0005 RMSE=0.0006 NMAE=0.0923 NRMSE=0.1233
+INFO:ours:|2024-08-23 12:10:24| MAE=0.0004 RMSE=0.0006 NMAE=0.0846 NRMSE=0.1130
+INFO:ours:|2024-08-23 12:10:54| Run 2 Error: DataLoader worker (pid(s) 314685) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-23 12:11:15| Run 3 Error: DataLoader worker (pid(s) 317886) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-23 12:12:36| Run 4 Error: DataLoader worker (pid(s) 330295) exited unexpectedly, This run will be skipped.
+INFO:ours:|2024-08-23 12:12:36| ********************Experiment Results:********************
+INFO:ours:|2024-08-23 12:12:36| MAE: 0.0004 ± 0.0000
+INFO:ours:|2024-08-23 12:12:36| RMSE: 0.0006 ± 0.0000
+INFO:ours:|2024-08-23 12:12:36| NMAE: 0.0885 ± 0.0039
+INFO:ours:|2024-08-23 12:12:36| NRMSE: 0.1182 ± 0.0052
+INFO:ours:|2024-08-23 12:12:36| Acc_1: 0.0793 ± 0.0084
+INFO:ours:|2024-08-23 12:12:36| Acc_5: 0.3839 ± 0.0257
+INFO:ours:|2024-08-23 12:12:36| Acc_10: 0.6697 ± 0.0233
+INFO:ours:|2024-08-23 12:12:36| ********************Experiment Success********************
