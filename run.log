@@ -1,0 +1,120 @@
+Experiment Start!!!
+Running at 2024-10-13 16:33: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:34: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:35: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:36: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:37: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:38: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:39: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:40: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:42: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:50: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 16:57: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 16:57: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:00: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:00: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:01: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:03: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:04: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:07: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:09: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 17:10: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 17:10: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 17:11: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 17:11: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Retrying at 2024-10-13 17:12: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 17:12: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:15: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:17: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:18: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 17:19: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:20: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 17:20: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:22: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:23: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:27: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:27: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:28: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:28: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:29: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:29: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:30: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:31: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:33: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 17:34: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.

@@ -1,0 +1,25 @@
+INFO:mlp:|2024-10-13 17:22:40| {
+     'bs': 8, 'classification': False, 'dataset': cpu, 'debug': False,
+     'decay': 0.0001, 'density': 0.8, 'device': cpu, 'device_name': core-i7-7820x,
+     'epochs': 1000, 'experiment': False, 'inductive': False, 'logger': None,
+     'loss_func': L1Loss, 'lr': 0.001, 'model': mlp, 'optim': AdamW,
+     'path': ./datasets/, 'patience': 100, 'program_test': False, 'rank': 300,
+     'record': True, 'retrain': False, 'rounds': 5, 'seed': 0,
+     'train_device': desktop-cpu-core-i7-7820x-fp32, 'train_size': 100, 'verbose': 0, 'visualize': True,
+}
+INFO:mlp:|2024-10-13 17:22:40| ********************Experiment Start********************
+INFO:mlp:|2024-10-13 17:22:49| Round=1 BestEpoch= 62 MAE=0.0007 RMSE=0.0009 NMAE=0.1353 NRMSE=0.1681 Training_time=1.3 s 
+INFO:mlp:|2024-10-13 17:22:55| Round=2 BestEpoch=  7 MAE=0.0007 RMSE=0.0009 NMAE=0.1384 NRMSE=0.1692 Training_time=0.2 s 
+INFO:mlp:|2024-10-13 17:23:03| Round=3 BestEpoch= 65 MAE=0.0007 RMSE=0.0010 NMAE=0.1472 NRMSE=0.1828 Training_time=1.3 s 
+INFO:mlp:|2024-10-13 17:23:12| Round=4 BestEpoch=101 MAE=0.0007 RMSE=0.0009 NMAE=0.1337 NRMSE=0.1657 Training_time=2.0 s 
+INFO:mlp:|2024-10-13 17:23:18| Round=5 BestEpoch= 17 MAE=0.0007 RMSE=0.0009 NMAE=0.1346 NRMSE=0.1754 Training_time=0.3 s 
+INFO:mlp:|2024-10-13 17:23:18| ********************Experiment Results:********************
+INFO:mlp:|2024-10-13 17:23:18| MAE: 0.0007 ± 0.0000
+INFO:mlp:|2024-10-13 17:23:18| RMSE: 0.0009 ± 0.0000
+INFO:mlp:|2024-10-13 17:23:18| NMAE: 0.1378 ± 0.0049
+INFO:mlp:|2024-10-13 17:23:18| NRMSE: 0.1722 ± 0.0062
+INFO:mlp:|2024-10-13 17:23:18| Acc_1: 0.0534 ± 0.0046
+INFO:mlp:|2024-10-13 17:23:18| Acc_5: 0.2600 ± 0.0164
+INFO:mlp:|2024-10-13 17:23:18| Acc_10: 0.4870 ± 0.0261
+INFO:mlp:|2024-10-13 17:23:18| train_time: 1.0029 ± 0.6651
+INFO:mlp:|2024-10-13 17:23:20| ********************Experiment Success********************

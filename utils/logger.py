@@ -2,7 +2,6 @@
 # Author : yuxiang Zeng
 # 日志
 import logging
-import pickle
 import sys
 import time
 import numpy as np
@@ -27,12 +26,21 @@ class Logger:
         self.log(self.format_and_sort_args_dict(args.__dict__))
 
     def save_result(self, metrics):
-        args = self.args
+        import pickle
         makedir('./results/metrics/')
-        address = f'./results/metrics/' + self.filename
+        args_copy = self.args.__dict__.copy()
+        if 'log' in args_copy:
+            del args_copy['log']  # 移除无法序列化的 log 对象
+        all_info = {'args': args_copy, 'dataset': self.args.model, 'model': self.args.model, 'train_size': self.args.train_size}
         for key in metrics:
-            pickle.dump(np.mean(metrics[key]), open(address + key + 'mean.pkl', 'wb'))
-            pickle.dump(np.std(metrics[key]), open(address + key + 'std.pkl', 'wb'))
+            all_info[key] = metrics[key]
+            all_info[key + '_mean'] = np.mean(metrics[key])
+            all_info[key + '_std'] = np.std(metrics[key])
+        print(all_info)
+        # 保存序列化结果
+        address = f'./results/metrics/' + self.filename
+        with open(address + '.pkl', 'wb') as f:
+            pickle.dump(all_info, f)
 
     # 日志记录
     def log(self, string):
@@ -150,9 +158,8 @@ class Logger:
     # 邮件发送日志
     def send_email(self, subject, body, receiver_email="zengyuxiang@hnu.edu.cn"):
         import yagmail
-        import pickle
         import os
-
+        import pickle
         if isinstance(body, dict):  # 判断 body 是否是字典
             metrics = body
             body = []
@@ -164,6 +171,7 @@ class Logger:
             # 添加实验成功提示
             body.append('*' * 10 + 'Experiment Success' + '*' * 10)
 
+            # print(metrics)
             for i in range(self.args.rounds):
                 round_metrics = f"Round {i + 1} : "
                 for key in metrics:

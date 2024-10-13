@@ -6,7 +6,7 @@ import os
 import numpy as np
 import pandas as pd
 import torch
-
+import pickle
 from tqdm import *
 
 from baselines.birnn import BiRNN
@@ -90,7 +90,7 @@ class Model(torch.nn.Module):
             graph, features, value = train_Batch
             graph, features, value = graph.to(self.args.device), features.to(self.args.device), value.to(self.args.device)
             pred = self.forward(graph, features)
-            loss = self.loss_function(pred, value)
+            loss = self.loss_function(pred, value if not self.args.classification else value.long())
             self.optimizer.zero_grad()
             loss.backward()
             self.optimizer.step()
@@ -109,7 +109,7 @@ class Model(torch.nn.Module):
             graph, features, value = graph.to(self.args.device), features.to(self.args.device), value.to(self.args.device)
             pred = self.forward(graph, features)
             if mode == 'valid':
-                val_loss += self.loss_function(pred, value)
+                val_loss += self.loss_function(pred, value if not self.args.classification else value.long())
             if self.args.classification:
                 pred = torch.max(pred, 1)[1]  # 获取预测的类别标签
             preds.append(pred)
@@ -142,6 +142,7 @@ def RunOnce(args, runId, log):
             model.setup_optimizer(args)
             model.load_state_dict(torch.load(model_path))
             results = model.evaluate_one_epoch(datamodule, 'test')
+            sum_time = pickle.load(open(f'./results/metrics/' + log_filename + '.pkl', 'rb'))['train_time'][runId]
             if not args.classification:
                 log(f'MAE={results["MAE"]:.4f} RMSE={results["RMSE"]:.4f} NMAE={results["NMAE"]:.4f} NRMSE={results["NRMSE"]:.4f}')
             else:
@@ -161,6 +162,7 @@ def RunOnce(args, runId, log):
             valid_error = model.evaluate_one_epoch(datamodule, 'valid')
             monitor.track_one_epoch(epoch, model, valid_error)
             train_time.append(time_cost)
+            plotter.append_epochs(valid_error)
             log.show_epoch_error(runId, epoch, monitor, epoch_loss, valid_error, train_time)
             plotter.append_epochs(valid_error)
             if monitor.early_stop:
@@ -168,11 +170,10 @@ def RunOnce(args, runId, log):
         model.load_state_dict(monitor.best_model)
         sum_time = sum(train_time[: monitor.best_epoch])
         results = model.evaluate_one_epoch(datamodule, 'test')
-        results['train_time'] = train_time
         log.show_test_error(runId, monitor, results, sum_time)
         torch.save(monitor.best_model, model_path)
         log.only_print(f'Model parameters saved to {model_path}')
-
+    results['train_time'] = sum_time
     return results
 
 
@@ -197,8 +198,7 @@ def RunExperiments(log, args):
 
     if args.record:
         log.save_result(metrics)
-
-    plotter.record_metric(metrics)
+        plotter.record_metric(metrics)
     log('*' * 20 + 'Experiment Success' + '*' * 20)
 
     return metrics
