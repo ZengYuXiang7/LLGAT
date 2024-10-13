@@ -21,8 +21,8 @@ class Logger:
         self.filename = filename
         makedir(self.fileroot)
         exper_time = time.strftime('%H_%M_%S', time.localtime(time.time())) + '_'
-        exper_filename = self.fileroot + exper_time + self.filename
-        logging.basicConfig(level=logging.INFO, filename=f"{exper_filename}.log", filemode='w')
+        self.exper_filename = self.fileroot + exper_time + self.filename
+        logging.basicConfig(level=logging.INFO, filename=f"{self.exper_filename}.log", filemode='w')
         self.logger = logging.getLogger(self.args.model)
         self.log(self.format_and_sort_args_dict(args.__dict__))
 
@@ -73,7 +73,7 @@ class Logger:
             # self(f"Acc = [1%={results['Acc_1']:.4f}, 5%={results['Acc_5']:.4f}, 10%={results['Acc_10']:.4f}] ")
         print()
 
-    def format_and_sort_args_dict(self, args_dict, items_per_line=5):
+    def format_and_sort_args_dict(self, args_dict, items_per_line=4):
         # Sort the dictionary by keys
         sorted_items = sorted(args_dict.items())
         formatted_str = ''
@@ -88,7 +88,7 @@ class Logger:
         def delete_small_log_files(directory):
             # 获取所有.log文件
             log_files = glob.glob(os.path.join(directory, '*.log'))
-            number_lines = 19
+            number_lines = 23
 
             # 遍历所有的.log文件
             for file_path in log_files:
@@ -112,8 +112,87 @@ class Logger:
                 except Exception as e:
                     print(f"Error processing file {file_path}: {e}")
 
+        def delete_empty_directories(dir_path):
+            import os
+            # 检查目录是否存在
+            if os.path.exists(dir_path) and os.path.isdir(dir_path):
+                # 遍历目录中的所有文件和子目录，从最底层开始
+                for root, dirs, files in os.walk(dir_path, topdown=False):
+                    # 先删除空的子目录
+                    for name in dirs:
+                        dir_to_remove = os.path.join(root, name)
+                        # 如果目录是空的，则删除它
+                        try:
+                            if not os.listdir(dir_to_remove):  # 判断目录是否为空
+                                os.rmdir(dir_to_remove)
+                                print(f"Directory {dir_to_remove} has been deleted.")
+                        except FileNotFoundError:
+                            # 如果目录已经不存在，忽略此错误
+                            pass
+                    # 检查当前目录是否也是空的，如果是则删除它
+                    try:
+                        if not os.listdir(root):  # 判断当前根目录是否为空
+                            os.rmdir(root)
+                            print(f"Directory {root} has been deleted.")
+                    except FileNotFoundError:
+                        # 如果目录已经不存在，忽略此错误
+                        pass
+            else:
+                print(f"Directory {dir_path} does not exist.")
+
         # 使用os.walk来遍历目录
-        root_directory = f'./results/{self.args.model}/'
+        root_directory = f'./results/'
+        delete_empty_directories(root_directory)
         for dirpath, dirnames, filenames in os.walk(root_directory):
             if 'log' in dirpath:
                 delete_small_log_files(dirpath)
+
+    # 邮件发送日志
+    def send_email(self, subject, body, receiver_email="zengyuxiang@hnu.edu.cn"):
+        import yagmail
+        import pickle
+        import os
+
+        if isinstance(body, dict):  # 判断 body 是否是字典
+            metrics = body
+            body = []
+            # 添加实验结果部分
+            body.append('*' * 10 + 'Experiment Results:' + '*' * 10)
+            for key in metrics:
+                body.append(f'{key}: {np.mean(metrics[key]):.4f} ± {np.std(metrics[key]):.4f}')
+
+            # 添加实验成功提示
+            body.append('*' * 10 + 'Experiment Success' + '*' * 10)
+
+            for i in range(self.args.rounds):
+                round_metrics = f"Round {i + 1} : "
+                for key in metrics:
+                    round_metrics += f"{key}: {metrics[key][i]:.4f} "
+                body.append(round_metrics)
+
+            # 添加格式化的 args 字典信息
+            body.append(self.format_and_sort_args_dict(self.args.__dict__, 3))
+        else:
+            print(body)
+            temp = body
+            body = [self.format_and_sort_args_dict(self.args.__dict__, 3), temp]
+
+        # 获得主目录下的邮件授权码，这部分为个人私有。
+        email_code_address = os.path.expanduser('~') + '/qq_smtp_info.pickle'
+        try:
+            with open(email_code_address, 'rb') as f:
+                all_info = pickle.load(f)
+            sender_email = all_info['email']
+            sender_password = all_info['password']
+        except FileNotFoundError:
+            print("非管理员，无法发送邮件")
+            return False
+
+        try:
+            # 发送 HTML 格式的邮件
+            yag = yagmail.SMTP(user=sender_email, password=sender_password, host='smtp.qq.com')
+            yag.send(to=receiver_email, subject=subject, contents=body)
+            print("邮件发送成功!")
+        except Exception as e:
+            print(f"发送邮件时出错: {e}")
+

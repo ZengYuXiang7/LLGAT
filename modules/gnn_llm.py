@@ -19,6 +19,7 @@ class GraphEncoder(torch.nn.Module):
         self.order = order
         """
             0 con1 1 con3 2 max3 3 input 4 output 5 None
+            0 con1 1 con3 2 max3 3 input 4 output 5 global node
         """
         if args.op_encoder == 'embed':
             self.dnn_embedding = torch.nn.Embedding(6, rank)

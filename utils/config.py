@@ -8,12 +8,12 @@ import yaml
 
 
 
-def get_config():
+def get_config(Config='TestConfig'):
     import argparse
     from utils.config import load_config, update_config_from_args
     parser = argparse.ArgumentParser()
     parser.add_argument('--config_path', type=str, default='exper_config.py')
-    parser.add_argument('--exp_name', type=str, default='TestConfig')
+    parser.add_argument('--exp_name', type=str, default=Config)
     args, unknown_args = parser.parse_known_args()
     args = load_config(args.config_path, args.exp_name)
     args = update_config_from_args(args, unknown_args)

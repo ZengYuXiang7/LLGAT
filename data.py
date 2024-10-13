@@ -7,7 +7,8 @@ import pickle
 
 from torch.utils.data import DataLoader
 
-from modules.latency_data import get_matrix_and_ops, get_adjacency_and_features
+from baselines.dnnperf import create_sample_graph
+from modules.latency_data import get_matrix_and_ops, get_adjacency_and_features, get_arch_str_from_arch_vector
 from utils.config import get_config
 from utils.logger import Logger
 from utils.plotter import MetricsPlotter
@@ -111,12 +112,19 @@ class TensorDataset(torch.utils.data.Dataset):
         key, value = self.x[idx], self.y[idx]
         value = torch.tensor(value).float()
         if self.args.model == 'ours':
+            # print('-'*100)
+            # print(key)
+            # print(get_arch_str_from_arch_vector(key))
             graph, label = get_matrix_and_ops(key)
             graph, features = get_adjacency_and_features(graph, label)
             graph = dgl.from_scipy(csr_matrix(graph))
             graph = dgl.to_bidirected(graph)
             features = torch.tensor(features).long()
             key = torch.argmax(features, dim=1)
+            # print(graph)
+            # print(graph.edges())
+            # print(key)
+            # exit()
             return graph, key, value
         elif self.args.model == 'gcn':
             graph, label = get_matrix_and_ops(key)
@@ -132,13 +140,20 @@ class TensorDataset(torch.utils.data.Dataset):
             graph = torch.tensor(graph).float()
             features = torch.tensor(features).float()
             return graph, features, value
-        elif self.args.model in ['mlp', 'lstm', 'gru']:
+        elif self.args.model in ['mlp', 'lstm', 'gru', 'flops']:
             key = torch.tensor(key).long()
             return None, key, value
         elif self.args.model == 'birnn':
             key = torch.tensor(key).float()
             return None, key, value
-
+        elif self.args.model == 'dnnperf':
+            graph, label = get_matrix_and_ops(key)
+            graph, features = get_adjacency_and_features(graph, label)
+            graph = graph[1:, 1:]
+            graph = dgl.from_scipy(csr_matrix(graph))
+            key = torch.argmax(torch.tensor(features).long(), dim=1)[1:]
+            graph = create_sample_graph(key, graph, self.args)
+            return graph, key, value
 
 
 def custom_collate_fn(batch, args):
@@ -148,6 +163,8 @@ def custom_collate_fn(batch, args):
         # batched_graph = default_collate(graphs)
         batched_graph = dgl.batch(graphs)
     elif args.model == 'gcn':
+        batched_graph = dgl.batch(graphs)
+    elif args.model == 'dnnperf':
         batched_graph = dgl.batch(graphs)
     elif args.model in ['brp_nas', 'help']:
         batched_graph = default_collate(graphs)

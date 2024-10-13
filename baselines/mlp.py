@@ -1,9 +1,6 @@
 # coding : utf-8
 # Author : yuxiang Zeng
 
-# coding : utf-8
-# Author : yuxiang Zeng
-
 import torch
 from utils.config import get_config
 
@@ -25,19 +22,9 @@ class MLP(torch.nn.Module):
         )
 
     def forward(self, _, x):
-        # print(x.shape)
         x = torch.nn.functional.one_hot(x, 5).float()
         x = x.reshape(x.shape[0], -1)
         outputs = self.NeuCF(x)
         outputs = torch.sigmoid(outputs)
         return outputs
 
-
-
-if __name__ == '__main__':
-    # Build a random graph
-    args = get_config()
-    features = torch.randn(256, 6)
-    mlp = MLP(6, 128, 1, args)
-    embeds = mlp(None, features)
-    print(embeds.shape)

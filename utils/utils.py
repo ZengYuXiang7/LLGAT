@@ -40,7 +40,8 @@ def set_settings(args):
 
     # 检查操作系统
     if platform.system() == "Darwin":  # "Darwin" 是 macOS 的系统标识
-        args.device = 'cpu'
+        args.device = 'cpu' if args.device != 'mps' else 'mps'
+
     else:
         # 如果不是 macOS，你可以选择默认设置为 CPU 或 GPU
         args.device = "cuda" if t.cuda.is_available() else "cpu"
@@ -117,7 +118,6 @@ def computer_info():
     showinfo('计算机名称', platform.node())
     showinfo('处理器类型', platform.processor())
     showinfo('计算机相关信息', platform.uname())
-
 
 
 

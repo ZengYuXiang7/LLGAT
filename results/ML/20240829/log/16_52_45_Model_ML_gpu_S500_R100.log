@@ -1,0 +1,278 @@
+INFO:ML:|2024-08-29 16:52:45| {
+     'att': 0, 'bs': 64, 'classification': False, 'cross': 0,
+     'dataset': gpu, 'debug': False, 'decay': 0.0001, 'density': 0.8,
+     'device': cpu, 'device_name': 1080Ti, 'dimension': None, 'epochs': 1000,
+     'eval_device': desktop-cpu-core-i9-13900k-fp32, 'experiment': 1, 'graph_encoder': gat, 'heads': 8,
+     'inductive': False, 'llm': 1, 'logger': None, 'loss_func': L1Loss,
+     'lr': 0.001, 'model': ML, 'op_encoder': embed, 'optim': AdamW,
+     'order': 4, 'path': ./datasets/, 'patience': 100, 'program_test': False,
+     'rank': 100, 'record': True, 'retrain': False, 'rounds': 5,
+     'seed': 0, 'train_device': desktop-gpu-gtx-1080ti-fp32, 'train_size': 500, 'verbose': 0,
+     'visualize': True,
+}
+INFO:ML:|2024-08-29 16:52:45| TestConfig(classification=False, visualize=True, inductive=False, bs=64, lr=0.001, decay=0.0001, loss_func='L1Loss', optim='AdamW', path='./datasets/', dataset='gpu', train_size=500, density=0.8, logger='None', model='ML', rank=100, retrain=False, seed=0, rounds=5, epochs=1000, patience=100, verbose=0, device='cpu', debug=False, experiment=1, program_test=False, record=True, train_device='desktop-gpu-gtx-1080ti-fp32', device_name='1080Ti', op_encoder='embed', graph_encoder='gat', order=4, heads=8, llm=1, eval_device='desktop-cpu-core-i9-13900k-fp32', att=0, cross=0)
+INFO:ML:|2024-08-29 16:52:45| ********************Experiment Start********************
+INFO:ML:|2024-08-29 16:52:58| ********************Experiment Results:********************
+INFO:ML:|2024-08-29 16:52:58| LinearRegression_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:52:58| LinearRegression_RMSE: 0.0010 ± 0.0000
+INFO:ML:|2024-08-29 16:52:58| LinearRegression_NMAE: 0.1540 ± 0.0042
+INFO:ML:|2024-08-29 16:52:58| LinearRegression_NRMSE: 0.1870 ± 0.0041
+INFO:ML:|2024-08-29 16:52:58| LinearRegression_Acc_1: 0.0436 ± 0.0011
+INFO:ML:|2024-08-29 16:52:58| LinearRegression_Acc_5: 0.2131 ± 0.0061
+INFO:ML:|2024-08-29 16:52:58| LinearRegression_Acc_10: 0.4064 ± 0.0125
+INFO:ML:|2024-08-29 16:52:58| Ridge_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:52:58| Ridge_RMSE: 0.0010 ± 0.0000
+INFO:ML:|2024-08-29 16:52:58| Ridge_NMAE: 0.1536 ± 0.0042
+INFO:ML:|2024-08-29 16:52:58| Ridge_NRMSE: 0.1874 ± 0.0039
+INFO:ML:|2024-08-29 16:52:58| Ridge_Acc_1: 0.0429 ± 0.0025
+INFO:ML:|2024-08-29 16:52:58| Ridge_Acc_5: 0.2152 ± 0.0072
+INFO:ML:|2024-08-29 16:52:58| Ridge_Acc_10: 0.4095 ± 0.0137
+INFO:ML:|2024-08-29 16:52:58| Lasso_MAE: 0.0012 ± 0.0001
+INFO:ML:|2024-08-29 16:52:58| Lasso_RMSE: 0.0016 ± 0.0001
+INFO:ML:|2024-08-29 16:52:58| Lasso_NMAE: 0.2562 ± 0.0158
+INFO:ML:|2024-08-29 16:52:58| Lasso_NRMSE: 0.3207 ± 0.0193
+INFO:ML:|2024-08-29 16:52:58| Lasso_Acc_1: 0.0213 ± 0.0035
+INFO:ML:|2024-08-29 16:52:58| Lasso_Acc_5: 0.1094 ± 0.0192
+INFO:ML:|2024-08-29 16:52:58| Lasso_Acc_10: 0.2265 ± 0.0176
+INFO:ML:|2024-08-29 16:52:58| SVR_MAE: 0.0014 ± 0.0000
+INFO:ML:|2024-08-29 16:52:58| SVR_RMSE: 0.0018 ± 0.0000
+INFO:ML:|2024-08-29 16:52:58| SVR_NMAE: 0.2870 ± 0.0023
+INFO:ML:|2024-08-29 16:52:58| SVR_NRMSE: 0.3535 ± 0.0031
+INFO:ML:|2024-08-29 16:52:58| SVR_Acc_1: 0.0135 ± 0.0003
+INFO:ML:|2024-08-29 16:52:58| SVR_Acc_5: 0.0679 ± 0.0014
+INFO:ML:|2024-08-29 16:52:58| SVR_Acc_10: 0.1761 ± 0.0044
+INFO:ML:|2024-08-29 16:52:58| DecisionTreeRegressor_MAE: 0.0008 ± 0.0001
+INFO:ML:|2024-08-29 16:52:58| DecisionTreeRegressor_RMSE: 0.0011 ± 0.0001
+INFO:ML:|2024-08-29 16:52:58| DecisionTreeRegressor_NMAE: 0.1613 ± 0.0128
+INFO:ML:|2024-08-29 16:52:58| DecisionTreeRegressor_NRMSE: 0.2084 ± 0.0166
+INFO:ML:|2024-08-29 16:52:58| DecisionTreeRegressor_Acc_1: 0.0599 ± 0.0124
+INFO:ML:|2024-08-29 16:52:58| DecisionTreeRegressor_Acc_5: 0.2590 ± 0.0373
+INFO:ML:|2024-08-29 16:52:58| DecisionTreeRegressor_Acc_10: 0.4535 ± 0.0391
+INFO:ML:|2024-08-29 16:52:58| RandomForestRegressor_MAE: 0.0006 ± 0.0001
+INFO:ML:|2024-08-29 16:52:58| RandomForestRegressor_RMSE: 0.0009 ± 0.0001
+INFO:ML:|2024-08-29 16:52:58| RandomForestRegressor_NMAE: 0.1346 ± 0.0160
+INFO:ML:|2024-08-29 16:52:58| RandomForestRegressor_NRMSE: 0.1710 ± 0.0166
+INFO:ML:|2024-08-29 16:52:58| RandomForestRegressor_Acc_1: 0.0567 ± 0.0064
+INFO:ML:|2024-08-29 16:52:58| RandomForestRegressor_Acc_5: 0.2698 ± 0.0336
+INFO:ML:|2024-08-29 16:52:58| RandomForestRegressor_Acc_10: 0.4828 ± 0.0555
+INFO:ML:|2024-08-29 16:52:58| GradientBoostingRegressor_MAE: 0.0005 ± 0.0001
+INFO:ML:|2024-08-29 16:52:58| GradientBoostingRegressor_RMSE: 0.0007 ± 0.0001
+INFO:ML:|2024-08-29 16:52:58| GradientBoostingRegressor_NMAE: 0.1023 ± 0.0133
+INFO:ML:|2024-08-29 16:52:58| GradientBoostingRegressor_NRMSE: 0.1282 ± 0.0137
+INFO:ML:|2024-08-29 16:52:58| GradientBoostingRegressor_Acc_1: 0.0737 ± 0.0129
+INFO:ML:|2024-08-29 16:52:58| GradientBoostingRegressor_Acc_5: 0.3430 ± 0.0497
+INFO:ML:|2024-08-29 16:52:58| GradientBoostingRegressor_Acc_10: 0.5850 ± 0.0599
+INFO:ML:|2024-08-29 16:52:58| ********************Experiment Success********************
+
+INFO:ML:|2024-08-29 16:52:58| ********************Experiment Start********************
+INFO:ML:|2024-08-29 16:53:13| ********************Experiment Results:********************
+INFO:ML:|2024-08-29 16:53:13| LinearRegression_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| LinearRegression_RMSE: 0.0009 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| LinearRegression_NMAE: 0.1530 ± 0.0029
+INFO:ML:|2024-08-29 16:53:13| LinearRegression_NRMSE: 0.1862 ± 0.0027
+INFO:ML:|2024-08-29 16:53:13| LinearRegression_Acc_1: 0.0422 ± 0.0024
+INFO:ML:|2024-08-29 16:53:13| LinearRegression_Acc_5: 0.2154 ± 0.0057
+INFO:ML:|2024-08-29 16:53:13| LinearRegression_Acc_10: 0.4098 ± 0.0098
+INFO:ML:|2024-08-29 16:53:13| Ridge_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| Ridge_RMSE: 0.0009 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| Ridge_NMAE: 0.1529 ± 0.0030
+INFO:ML:|2024-08-29 16:53:13| Ridge_NRMSE: 0.1862 ± 0.0028
+INFO:ML:|2024-08-29 16:53:13| Ridge_Acc_1: 0.0421 ± 0.0022
+INFO:ML:|2024-08-29 16:53:13| Ridge_Acc_5: 0.2158 ± 0.0060
+INFO:ML:|2024-08-29 16:53:13| Ridge_Acc_10: 0.4107 ± 0.0104
+INFO:ML:|2024-08-29 16:53:13| Lasso_MAE: 0.0013 ± 0.0001
+INFO:ML:|2024-08-29 16:53:13| Lasso_RMSE: 0.0016 ± 0.0001
+INFO:ML:|2024-08-29 16:53:13| Lasso_NMAE: 0.2606 ± 0.0153
+INFO:ML:|2024-08-29 16:53:13| Lasso_NRMSE: 0.3254 ± 0.0178
+INFO:ML:|2024-08-29 16:53:13| Lasso_Acc_1: 0.0201 ± 0.0039
+INFO:ML:|2024-08-29 16:53:13| Lasso_Acc_5: 0.1062 ± 0.0133
+INFO:ML:|2024-08-29 16:53:13| Lasso_Acc_10: 0.2151 ± 0.0208
+INFO:ML:|2024-08-29 16:53:13| SVR_MAE: 0.0014 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| SVR_RMSE: 0.0018 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| SVR_NMAE: 0.2844 ± 0.0039
+INFO:ML:|2024-08-29 16:53:13| SVR_NRMSE: 0.3503 ± 0.0050
+INFO:ML:|2024-08-29 16:53:13| SVR_Acc_1: 0.0117 ± 0.0020
+INFO:ML:|2024-08-29 16:53:13| SVR_Acc_5: 0.0725 ± 0.0055
+INFO:ML:|2024-08-29 16:53:13| SVR_Acc_10: 0.1680 ± 0.0070
+INFO:ML:|2024-08-29 16:53:13| DecisionTreeRegressor_MAE: 0.0006 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| DecisionTreeRegressor_RMSE: 0.0009 ± 0.0001
+INFO:ML:|2024-08-29 16:53:13| DecisionTreeRegressor_NMAE: 0.1228 ± 0.0093
+INFO:ML:|2024-08-29 16:53:13| DecisionTreeRegressor_NRMSE: 0.1679 ± 0.0132
+INFO:ML:|2024-08-29 16:53:13| DecisionTreeRegressor_Acc_1: 0.0950 ± 0.0131
+INFO:ML:|2024-08-29 16:53:13| DecisionTreeRegressor_Acc_5: 0.3454 ± 0.0148
+INFO:ML:|2024-08-29 16:53:13| DecisionTreeRegressor_Acc_10: 0.5730 ± 0.0150
+INFO:ML:|2024-08-29 16:53:13| RandomForestRegressor_MAE: 0.0005 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| RandomForestRegressor_RMSE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| RandomForestRegressor_NMAE: 0.1025 ± 0.0078
+INFO:ML:|2024-08-29 16:53:13| RandomForestRegressor_NRMSE: 0.1342 ± 0.0066
+INFO:ML:|2024-08-29 16:53:13| RandomForestRegressor_Acc_1: 0.0776 ± 0.0085
+INFO:ML:|2024-08-29 16:53:13| RandomForestRegressor_Acc_5: 0.3588 ± 0.0298
+INFO:ML:|2024-08-29 16:53:13| RandomForestRegressor_Acc_10: 0.6000 ± 0.0413
+INFO:ML:|2024-08-29 16:53:13| GradientBoostingRegressor_MAE: 0.0004 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| GradientBoostingRegressor_RMSE: 0.0005 ± 0.0000
+INFO:ML:|2024-08-29 16:53:13| GradientBoostingRegressor_NMAE: 0.0743 ± 0.0030
+INFO:ML:|2024-08-29 16:53:13| GradientBoostingRegressor_NRMSE: 0.0947 ± 0.0044
+INFO:ML:|2024-08-29 16:53:13| GradientBoostingRegressor_Acc_1: 0.1023 ± 0.0048
+INFO:ML:|2024-08-29 16:53:13| GradientBoostingRegressor_Acc_5: 0.4485 ± 0.0124
+INFO:ML:|2024-08-29 16:53:13| GradientBoostingRegressor_Acc_10: 0.7052 ± 0.0176
+INFO:ML:|2024-08-29 16:53:13| ********************Experiment Success********************
+
+INFO:ML:|2024-08-29 16:53:13| ********************Experiment Start********************
+INFO:ML:|2024-08-29 16:53:32| ********************Experiment Results:********************
+INFO:ML:|2024-08-29 16:53:32| LinearRegression_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| LinearRegression_RMSE: 0.0009 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| LinearRegression_NMAE: 0.1509 ± 0.0014
+INFO:ML:|2024-08-29 16:53:32| LinearRegression_NRMSE: 0.1835 ± 0.0015
+INFO:ML:|2024-08-29 16:53:32| LinearRegression_Acc_1: 0.0439 ± 0.0005
+INFO:ML:|2024-08-29 16:53:32| LinearRegression_Acc_5: 0.2137 ± 0.0041
+INFO:ML:|2024-08-29 16:53:32| LinearRegression_Acc_10: 0.4117 ± 0.0057
+INFO:ML:|2024-08-29 16:53:32| Ridge_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| Ridge_RMSE: 0.0009 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| Ridge_NMAE: 0.1508 ± 0.0015
+INFO:ML:|2024-08-29 16:53:32| Ridge_NRMSE: 0.1836 ± 0.0016
+INFO:ML:|2024-08-29 16:53:32| Ridge_Acc_1: 0.0437 ± 0.0013
+INFO:ML:|2024-08-29 16:53:32| Ridge_Acc_5: 0.2149 ± 0.0042
+INFO:ML:|2024-08-29 16:53:32| Ridge_Acc_10: 0.4127 ± 0.0060
+INFO:ML:|2024-08-29 16:53:32| Lasso_MAE: 0.0012 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| Lasso_RMSE: 0.0016 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| Lasso_NMAE: 0.2557 ± 0.0092
+INFO:ML:|2024-08-29 16:53:32| Lasso_NRMSE: 0.3190 ± 0.0108
+INFO:ML:|2024-08-29 16:53:32| Lasso_Acc_1: 0.0205 ± 0.0035
+INFO:ML:|2024-08-29 16:53:32| Lasso_Acc_5: 0.1020 ± 0.0068
+INFO:ML:|2024-08-29 16:53:32| Lasso_Acc_10: 0.2093 ± 0.0093
+INFO:ML:|2024-08-29 16:53:32| SVR_MAE: 0.0014 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| SVR_RMSE: 0.0018 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| SVR_NMAE: 0.2821 ± 0.0034
+INFO:ML:|2024-08-29 16:53:32| SVR_NRMSE: 0.3476 ± 0.0038
+INFO:ML:|2024-08-29 16:53:32| SVR_Acc_1: 0.0133 ± 0.0035
+INFO:ML:|2024-08-29 16:53:32| SVR_Acc_5: 0.0732 ± 0.0048
+INFO:ML:|2024-08-29 16:53:32| SVR_Acc_10: 0.1683 ± 0.0099
+INFO:ML:|2024-08-29 16:53:32| DecisionTreeRegressor_MAE: 0.0004 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| DecisionTreeRegressor_RMSE: 0.0006 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| DecisionTreeRegressor_NMAE: 0.0864 ± 0.0038
+INFO:ML:|2024-08-29 16:53:32| DecisionTreeRegressor_NRMSE: 0.1190 ± 0.0052
+INFO:ML:|2024-08-29 16:53:32| DecisionTreeRegressor_Acc_1: 0.1273 ± 0.0205
+INFO:ML:|2024-08-29 16:53:32| DecisionTreeRegressor_Acc_5: 0.4479 ± 0.0168
+INFO:ML:|2024-08-29 16:53:32| DecisionTreeRegressor_Acc_10: 0.6842 ± 0.0171
+INFO:ML:|2024-08-29 16:53:32| RandomForestRegressor_MAE: 0.0003 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| RandomForestRegressor_RMSE: 0.0004 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| RandomForestRegressor_NMAE: 0.0671 ± 0.0012
+INFO:ML:|2024-08-29 16:53:32| RandomForestRegressor_NRMSE: 0.0865 ± 0.0040
+INFO:ML:|2024-08-29 16:53:32| RandomForestRegressor_Acc_1: 0.1120 ± 0.0063
+INFO:ML:|2024-08-29 16:53:32| RandomForestRegressor_Acc_5: 0.4883 ± 0.0134
+INFO:ML:|2024-08-29 16:53:32| RandomForestRegressor_Acc_10: 0.7501 ± 0.0104
+INFO:ML:|2024-08-29 16:53:32| GradientBoostingRegressor_MAE: 0.0003 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| GradientBoostingRegressor_RMSE: 0.0004 ± 0.0000
+INFO:ML:|2024-08-29 16:53:32| GradientBoostingRegressor_NMAE: 0.0585 ± 0.0027
+INFO:ML:|2024-08-29 16:53:32| GradientBoostingRegressor_NRMSE: 0.0737 ± 0.0031
+INFO:ML:|2024-08-29 16:53:32| GradientBoostingRegressor_Acc_1: 0.1272 ± 0.0098
+INFO:ML:|2024-08-29 16:53:32| GradientBoostingRegressor_Acc_5: 0.5367 ± 0.0240
+INFO:ML:|2024-08-29 16:53:32| GradientBoostingRegressor_Acc_10: 0.7828 ± 0.0185
+INFO:ML:|2024-08-29 16:53:32| ********************Experiment Success********************
+
+INFO:ML:|2024-08-29 16:53:32| ********************Experiment Start********************
+INFO:ML:|2024-08-29 16:53:54| ********************Experiment Results:********************
+INFO:ML:|2024-08-29 16:53:54| LinearRegression_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| LinearRegression_RMSE: 0.0009 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| LinearRegression_NMAE: 0.1503 ± 0.0009
+INFO:ML:|2024-08-29 16:53:54| LinearRegression_NRMSE: 0.1833 ± 0.0011
+INFO:ML:|2024-08-29 16:53:54| LinearRegression_Acc_1: 0.0430 ± 0.0012
+INFO:ML:|2024-08-29 16:53:54| LinearRegression_Acc_5: 0.2174 ± 0.0042
+INFO:ML:|2024-08-29 16:53:54| LinearRegression_Acc_10: 0.4158 ± 0.0047
+INFO:ML:|2024-08-29 16:53:54| Ridge_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| Ridge_RMSE: 0.0009 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| Ridge_NMAE: 0.1502 ± 0.0009
+INFO:ML:|2024-08-29 16:53:54| Ridge_NRMSE: 0.1833 ± 0.0010
+INFO:ML:|2024-08-29 16:53:54| Ridge_Acc_1: 0.0434 ± 0.0013
+INFO:ML:|2024-08-29 16:53:54| Ridge_Acc_5: 0.2175 ± 0.0040
+INFO:ML:|2024-08-29 16:53:54| Ridge_Acc_10: 0.4166 ± 0.0048
+INFO:ML:|2024-08-29 16:53:54| Lasso_MAE: 0.0013 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| Lasso_RMSE: 0.0016 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| Lasso_NMAE: 0.2573 ± 0.0044
+INFO:ML:|2024-08-29 16:53:54| Lasso_NRMSE: 0.3207 ± 0.0052
+INFO:ML:|2024-08-29 16:53:54| Lasso_Acc_1: 0.0206 ± 0.0019
+INFO:ML:|2024-08-29 16:53:54| Lasso_Acc_5: 0.1007 ± 0.0038
+INFO:ML:|2024-08-29 16:53:54| Lasso_Acc_10: 0.2061 ± 0.0054
+INFO:ML:|2024-08-29 16:53:54| SVR_MAE: 0.0014 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| SVR_RMSE: 0.0018 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| SVR_NMAE: 0.2821 ± 0.0033
+INFO:ML:|2024-08-29 16:53:54| SVR_NRMSE: 0.3476 ± 0.0037
+INFO:ML:|2024-08-29 16:53:54| SVR_Acc_1: 0.0134 ± 0.0036
+INFO:ML:|2024-08-29 16:53:54| SVR_Acc_5: 0.0732 ± 0.0049
+INFO:ML:|2024-08-29 16:53:54| SVR_Acc_10: 0.1681 ± 0.0094
+INFO:ML:|2024-08-29 16:53:54| DecisionTreeRegressor_MAE: 0.0004 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| DecisionTreeRegressor_RMSE: 0.0006 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| DecisionTreeRegressor_NMAE: 0.0794 ± 0.0026
+INFO:ML:|2024-08-29 16:53:54| DecisionTreeRegressor_NRMSE: 0.1098 ± 0.0050
+INFO:ML:|2024-08-29 16:53:54| DecisionTreeRegressor_Acc_1: 0.1463 ± 0.0182
+INFO:ML:|2024-08-29 16:53:54| DecisionTreeRegressor_Acc_5: 0.4724 ± 0.0140
+INFO:ML:|2024-08-29 16:53:54| DecisionTreeRegressor_Acc_10: 0.7067 ± 0.0083
+INFO:ML:|2024-08-29 16:53:54| RandomForestRegressor_MAE: 0.0003 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| RandomForestRegressor_RMSE: 0.0004 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| RandomForestRegressor_NMAE: 0.0615 ± 0.0020
+INFO:ML:|2024-08-29 16:53:54| RandomForestRegressor_NRMSE: 0.0792 ± 0.0017
+INFO:ML:|2024-08-29 16:53:54| RandomForestRegressor_Acc_1: 0.1205 ± 0.0060
+INFO:ML:|2024-08-29 16:53:54| RandomForestRegressor_Acc_5: 0.5163 ± 0.0138
+INFO:ML:|2024-08-29 16:53:54| RandomForestRegressor_Acc_10: 0.7810 ± 0.0149
+INFO:ML:|2024-08-29 16:53:54| GradientBoostingRegressor_MAE: 0.0002 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| GradientBoostingRegressor_RMSE: 0.0003 ± 0.0000
+INFO:ML:|2024-08-29 16:53:54| GradientBoostingRegressor_NMAE: 0.0507 ± 0.0008
+INFO:ML:|2024-08-29 16:53:54| GradientBoostingRegressor_NRMSE: 0.0652 ± 0.0011
+INFO:ML:|2024-08-29 16:53:54| GradientBoostingRegressor_Acc_1: 0.1465 ± 0.0066
+INFO:ML:|2024-08-29 16:53:54| GradientBoostingRegressor_Acc_5: 0.5974 ± 0.0083
+INFO:ML:|2024-08-29 16:53:54| GradientBoostingRegressor_Acc_10: 0.8279 ± 0.0101
+INFO:ML:|2024-08-29 16:53:54| ********************Experiment Success********************
+
+INFO:ML:|2024-08-29 16:53:54| ********************Experiment Start********************
+INFO:ML:|2024-08-29 16:54:23| ********************Experiment Results:********************
+INFO:ML:|2024-08-29 16:54:23| LinearRegression_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| LinearRegression_RMSE: 0.0009 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| LinearRegression_NMAE: 0.1493 ± 0.0003
+INFO:ML:|2024-08-29 16:54:23| LinearRegression_NRMSE: 0.1822 ± 0.0004
+INFO:ML:|2024-08-29 16:54:23| LinearRegression_Acc_1: 0.0429 ± 0.0010
+INFO:ML:|2024-08-29 16:54:23| LinearRegression_Acc_5: 0.2181 ± 0.0015
+INFO:ML:|2024-08-29 16:54:23| LinearRegression_Acc_10: 0.4187 ± 0.0023
+INFO:ML:|2024-08-29 16:54:23| Ridge_MAE: 0.0007 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| Ridge_RMSE: 0.0009 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| Ridge_NMAE: 0.1493 ± 0.0003
+INFO:ML:|2024-08-29 16:54:23| Ridge_NRMSE: 0.1822 ± 0.0004
+INFO:ML:|2024-08-29 16:54:23| Ridge_Acc_1: 0.0429 ± 0.0010
+INFO:ML:|2024-08-29 16:54:23| Ridge_Acc_5: 0.2180 ± 0.0015
+INFO:ML:|2024-08-29 16:54:23| Ridge_Acc_10: 0.4188 ± 0.0025
+INFO:ML:|2024-08-29 16:54:23| Lasso_MAE: 0.0012 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| Lasso_RMSE: 0.0016 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| Lasso_NMAE: 0.2558 ± 0.0050
+INFO:ML:|2024-08-29 16:54:23| Lasso_NRMSE: 0.3191 ± 0.0060
+INFO:ML:|2024-08-29 16:54:23| Lasso_Acc_1: 0.0204 ± 0.0045
+INFO:ML:|2024-08-29 16:54:23| Lasso_Acc_5: 0.1019 ± 0.0061
+INFO:ML:|2024-08-29 16:54:23| Lasso_Acc_10: 0.2049 ± 0.0055
+INFO:ML:|2024-08-29 16:54:23| SVR_MAE: 0.0014 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| SVR_RMSE: 0.0018 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| SVR_NMAE: 0.2796 ± 0.0025
+INFO:ML:|2024-08-29 16:54:23| SVR_NRMSE: 0.3448 ± 0.0027
+INFO:ML:|2024-08-29 16:54:23| SVR_Acc_1: 0.0134 ± 0.0040
+INFO:ML:|2024-08-29 16:54:23| SVR_Acc_5: 0.0795 ± 0.0050
+INFO:ML:|2024-08-29 16:54:23| SVR_Acc_10: 0.1688 ± 0.0069
+INFO:ML:|2024-08-29 16:54:23| DecisionTreeRegressor_MAE: 0.0003 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| DecisionTreeRegressor_RMSE: 0.0005 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| DecisionTreeRegressor_NMAE: 0.0624 ± 0.0019
+INFO:ML:|2024-08-29 16:54:23| DecisionTreeRegressor_NRMSE: 0.0874 ± 0.0040
+INFO:ML:|2024-08-29 16:54:23| DecisionTreeRegressor_Acc_1: 0.1999 ± 0.0099
+INFO:ML:|2024-08-29 16:54:23| DecisionTreeRegressor_Acc_5: 0.5544 ± 0.0075
+INFO:ML:|2024-08-29 16:54:23| DecisionTreeRegressor_Acc_10: 0.7837 ± 0.0081
+INFO:ML:|2024-08-29 16:54:23| RandomForestRegressor_MAE: 0.0002 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| RandomForestRegressor_RMSE: 0.0003 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| RandomForestRegressor_NMAE: 0.0505 ± 0.0032
+INFO:ML:|2024-08-29 16:54:23| RandomForestRegressor_NRMSE: 0.0654 ± 0.0035
+INFO:ML:|2024-08-29 16:54:23| RandomForestRegressor_Acc_1: 0.1482 ± 0.0086
+INFO:ML:|2024-08-29 16:54:23| RandomForestRegressor_Acc_5: 0.5948 ± 0.0246
+INFO:ML:|2024-08-29 16:54:23| RandomForestRegressor_Acc_10: 0.8386 ± 0.0173
+INFO:ML:|2024-08-29 16:54:23| GradientBoostingRegressor_MAE: 0.0002 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| GradientBoostingRegressor_RMSE: 0.0003 ± 0.0000
+INFO:ML:|2024-08-29 16:54:23| GradientBoostingRegressor_NMAE: 0.0412 ± 0.0011
+INFO:ML:|2024-08-29 16:54:23| GradientBoostingRegressor_NRMSE: 0.0537 ± 0.0018
+INFO:ML:|2024-08-29 16:54:23| GradientBoostingRegressor_Acc_1: 0.1826 ± 0.0073
+INFO:ML:|2024-08-29 16:54:23| GradientBoostingRegressor_Acc_5: 0.6783 ± 0.0076
+INFO:ML:|2024-08-29 16:54:23| GradientBoostingRegressor_Acc_10: 0.8797 ± 0.0046
+INFO:ML:|2024-08-29 16:54:23| ********************Experiment Success********************
+

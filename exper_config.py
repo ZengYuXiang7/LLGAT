@@ -9,7 +9,7 @@ from dataclasses import dataclass
 class TestConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
     model: str = 'ours'
     bs: int = 32
-    rank: int = 160
+    rank: int = 100
 
     # Encoder
     op_encoder: str = 'embed'
@@ -34,7 +34,7 @@ class TestConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, T
 class TestGPUConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
     model: str = 'ours'
     bs: int = 32
-    rank: int = 160
+    rank: int = 100
 
     # Encoder
     op_encoder: str = 'embed'
@@ -57,11 +57,13 @@ class TestGPUConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo
 @dataclass
 class HELPConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
     model: str = 'help'
+    rank: int = 300
 
 
 @dataclass
 class MLPConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
     model: str = 'mlp'
+    rank: int = 300
 
 
 @dataclass
@@ -74,19 +76,32 @@ class GCNConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, Tr
 class BrpNASConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
     model: str = 'brp_nas'
     bs: int = 1
+    rank: int = 300
 
 
 @dataclass
 class LSTMConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
     model: str = 'lstm'
+    rank: int = 300
 
 @dataclass
 class GRUConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
     model: str = 'gru'
+    rank: int = 300
 
 @dataclass
 class BiRnnConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
     model: str = 'birnn'
+    rank: int = 300
 
 
+@dataclass
+class FlopsConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
+    model: str = 'flops'
+    rank: int = 32
 
+@dataclass
+class DNNPerfConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, TrainingConfig, OtherConfig):
+    model: str = 'dnnperf'
+    lr: float = 0.0001
+    bs: int = 64

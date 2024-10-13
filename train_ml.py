@@ -29,6 +29,7 @@ class experiment:
         data = []
         for i in range(len(pickle_files)):
             pickle_file = args.path + pickle_files[i]
+            print(pickle_file)
             with open(pickle_file, 'rb') as f:
                 now = pickle.load(f)
             data.append([now])
@@ -226,15 +227,24 @@ def RunExperiments(log, args):
 
 if __name__ == '__main__':
     args = get_config()
+    # args.dataset = 'gpu'
+    if args.dataset == 'gpu':
+        args.train_device = 'desktop-gpu-gtx-1080ti-fp32'
+        args.device_name = '1080Ti'
     set_settings(args)
     args.model = 'ML'
     args.dimension = None
     args.experiment = 1
     args.rounds = 5
-    log = Logger(args)
+    exper_detail = f"Dataset : {args.dataset.upper()}, Model : {args.model}, Train_size : {args.train_size}, Bs : {args.bs}, Rank : {args.rank}, "
+    exper_detail += f"Train Device : {args.train_device} "
+    # log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}_O{args.order}'
+    log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}'
+    print(log_filename)
+    log = Logger(log_filename, exper_detail, args)
     args.log = log
     log(str(args))
-    for train_size in [5, 50, 100, 500, 900]:
+    for train_size in [100, 200, 400, 500, 900]:
         args.train_size = train_size
         RunExperiments(log, args)
 

@@ -11,6 +11,7 @@ from tqdm import *
 
 from baselines.birnn import BiRNN
 from baselines.brp_nas import BRP_NAS
+from baselines.dnnperf import DNNPerf
 from baselines.gru import GRU
 from baselines.help import HELPBase
 from baselines.lstm import LSTM
@@ -50,7 +51,7 @@ class Model(torch.nn.Module):
             self.model = GraphSAGEConv(6, args.rank, 6, self.args)
 
         elif args.model == 'mlp':
-            self.model = MLP(6, self.hidden_size, 1, args)
+            self.model = MLP(6 * 5, self.hidden_size, 1, args)
 
         elif args.model == 'lstm':
             self.model = LSTM(6, self.hidden_size, 1, args)
@@ -63,6 +64,9 @@ class Model(torch.nn.Module):
 
         elif args.model == 'help':
             self.model = HELPBase(6, args)
+
+        elif args.model == 'dnnperf':
+            self.model = DNNPerf(in_node_feats=7, node_hidden_feats=32, in_edge_feats=2, edge_hidden_feats=32, args=args)
 
         else:
             raise ValueError(f"Unsupported model type: {args.model}")
@@ -146,6 +150,7 @@ def RunOnce(args, runId, log):
         except Exception as e:
             log.only_print(f'Error: {str(e)}')
             retrain_required = True
+            print()
 
     if retrain_required:
         # Setup training tool
@@ -163,8 +168,8 @@ def RunOnce(args, runId, log):
         model.load_state_dict(monitor.best_model)
         sum_time = sum(train_time[: monitor.best_epoch])
         results = model.evaluate_one_epoch(datamodule, 'test')
+        results['train_time'] = train_time
         log.show_test_error(runId, monitor, results, sum_time)
-        # Save the best model parameters
         torch.save(monitor.best_model, model_path)
         log.only_print(f'Model parameters saved to {model_path}')
 
@@ -177,13 +182,13 @@ def RunExperiments(log, args):
 
     for runId in range(args.rounds):
         plotter.reset_round()
-        try:
-            results = RunOnce(args, runId, log)
-            plotter.append_round()
-            for key in results:
-                metrics[key].append(results[key])
-        except Exception as e:
-            log(f'Run {runId + 1} Error: {e}, This run will be skipped.')
+        # try:
+        results = RunOnce(args, runId, log)
+        plotter.append_round()
+        for key in results:
+            metrics[key].append(results[key])
+        # except Exception as e:
+            # log(f'Run {runId + 1} Error: {e}, This run will be skipped.')
 
     log('*' * 20 + 'Experiment Results:' + '*' * 20)
 
@@ -193,7 +198,7 @@ def RunExperiments(log, args):
     if args.record:
         log.save_result(metrics)
 
-    # plotter.record_metric(metrics)
+    plotter.record_metric(metrics)
     log('*' * 20 + 'Experiment Success' + '*' * 20)
 
     return metrics
@@ -210,12 +215,18 @@ if __name__ == '__main__':
     # logger plotter
     exper_detail = f"Dataset : {args.dataset.upper()}, Model : {args.model}, Train_size : {args.train_size}, Bs : {args.bs}, Rank : {args.rank}, "
     exper_detail += f"Train Device : {args.train_device} "
-    log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}_O{args.order}'
+    log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}'
     print(log_filename)
     log = Logger(log_filename, exper_detail, args)
     plotter = MetricsPlotter(log_filename, args)
     args.log = log
 
     # Run Experiment
-    RunExperiments(log, args)
-    time.sleep(1)
+    try:
+        metrics = RunExperiments(log, args)
+        log.send_email(log_filename, metrics, 'zengyuxiang@hnu.edu.cn')
+        # log.send_email(log_filename, metrics, '21cychen@stu.edu.cn')
+    except Exception as e:
+        import traceback
+        error_details = traceback.format_exc()
+        log.send_email(log_filename, error_details, 'zengyuxiang@hnu.edu.cn')

@@ -20,11 +20,13 @@ class GraphSAGEConv(torch.nn.Module):
         self.acts = torch.nn.ModuleList([torch.nn.ReLU() for _ in range(order)])
         self.dropout = torch.nn.Dropout(0.10)
         self.pred_layers = torch.nn.Linear(rank, 1)
+        print(self)
 
     def forward(self, graph, features):
         g, feats = graph, self.dnn_embedding(features).reshape(features.shape[0] * 9, -1)
         for i, (layer, norm, act) in enumerate(zip(self.layers, self.norms, self.acts)):
             feats = layer(g, feats)
+            print(feats.shape)
             feats = norm(feats)
             feats = act(feats)
             feats = self.dropout(feats)

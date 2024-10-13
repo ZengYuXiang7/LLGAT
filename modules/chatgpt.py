@@ -47,8 +47,8 @@ class NAS_ChatGPT:
         """
             CPU
             CPU时钟频率::最大睿频频率::核心数::线程数::三级缓存::最大内存带宽
-            CPU Clock Frequency, Maximum Turbo Boost Frequency, Number of Cores, Number of Threads, Level 3 Cache, Maximum Memory Bandwidth
-            CPU_Clock_Frequency::Maximum_Turbo_Boost_Frequency::Number_of_Cores::Number_of_Threads::Level_3_Cache::Maximum_Memory_Bandwidth
+            Maximum Turbo Boost Frequency, Number of Cores, Number of Threads, Level 3 Cache, Maximum Memory Bandwidth
+            Maximum_Turbo_Boost_Frequency::Number_of_Cores::Number_of_Threads::Level_3_Cache::Maximum_Memory_Bandwidth
         """
         pre_str = "You are now a search engines, and required to provide the inquired information of the given CPU processer.\n"
         input_device = 'The processer is ' + input_device + '.\n'
@@ -77,6 +77,7 @@ class NAS_ChatGPT:
 
 def excute(device_name, dtype):
     str_list = llm.get_device_more_info(device_name, dtype)
+    # print(str_list)
     import ast
     list_obj = ast.literal_eval(str_list)
     list_obj = list(list_obj)
@@ -93,10 +94,11 @@ if __name__ == '__main__':
     # NAS llm
     llm = NAS_ChatGPT(args)
     # device_name = 'core-i7-7820x'
-    device_name = 'core-i9-13900K'
+    # device_name = 'core-i9-13900K'
     # excute('core-i7-7820x', 'cpu')
     # excute('core-i9-13900K', 'cpu')
-    excute('1080Ti', 'gpu')
-    excute('3080', 'gpu')
+    # excute('1080Ti', 'gpu')
+    # excute('3080', 'gpu')
+    excute('Apple A18 pro', 'cpu')
 
 

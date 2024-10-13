@@ -2,7 +2,7 @@
 # Author : yuxiang Zeng
 
 import copy
-
+import torch
 import numpy as np
 
 
@@ -144,7 +144,16 @@ def get_adjacency_and_features(matrix, labels):
     features[0][5] = 1  # global
     features[1][3] = 1  # input
     features[-1][4] = 1  # output
+
     for idx, op in enumerate(labels):
         if op is not None and op != 'input' and op != 'output':
             features[idx + 1][int(op) - 2] = 1
+
+    # 20240925 特征反演需要
+    for i in range(len(features)):
+        if sum(features[i]) == 0:
+            matrix[0, i] = 0
+    # print(matrix)
+    # print(labels)
+    # print(features)
     return matrix, features

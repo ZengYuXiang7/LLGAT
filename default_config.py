@@ -7,7 +7,6 @@ from dataclasses import dataclass
 class LoggerConfig:
     logger: str = 'None'
 
-
 @dataclass
 class ExperimentConfig:
     seed: int = 0
