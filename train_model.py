@@ -16,23 +16,21 @@ from baselines.gru import GRU
 from baselines.help import HELPBase
 from baselines.lstm import LSTM
 from baselines.mlp import MLP
-from data import experiment, DataModule
 from baselines.gnn import GraphSAGEConv
-from modules.gnn_llm import OurModel
-from utils.config import get_config
-from utils.logger import Logger
+from modules.LLGAT import LLGAT
 from utils.metrics import ErrorMetrics
 from utils.monitor import EarlyStopping
-from utils.plotter import MetricsPlotter
 from utils.trainer import get_loss_function, get_optimizer
-from utils.utils import optimizer_zero_grad, optimizer_step, lr_scheduler_step, set_settings, set_seed
 from utils.utils import makedir
+
 global log, args
 import sys
+
 sys.dont_write_bytecode = True
 torch.set_default_dtype(torch.float32)
 
 import pysnooper
+
 
 # @pysnooper.snoop()
 class Model(torch.nn.Module):
@@ -42,7 +40,7 @@ class Model(torch.nn.Module):
         self.input_size = data.x.shape[-1]
         self.hidden_size = args.rank
         if args.model == 'ours':
-            self.model = OurModel(args)
+            self.model = LLGAT(args)
 
         elif args.model == 'brp_nas':
             self.model = BRP_NAS(args)
@@ -79,7 +77,8 @@ class Model(torch.nn.Module):
         self.to(args.device)
         self.loss_function = get_loss_function(args).to(args.device)
         self.optimizer = get_optimizer(self.parameters(), lr=args.lr, decay=args.decay, args=args)
-        self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer, mode='min' if args.classification else 'max', factor=0.5, patience=args.patience // 1.5, threshold=0.0)
+        self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer, mode='min' if args.classification else 'max', factor=0.5,
+                                                                    patience=args.patience // 1.5, threshold=0.0)
 
     def train_one_epoch(self, dataModule):
         loss = None
@@ -127,9 +126,12 @@ def RunOnce(args, runId, log):
     set_seed(args.seed + runId)
 
     # Initialize
+    from data import experiment, DataModule
     exper = experiment(args)
     datamodule = DataModule(exper, args)
     model = Model(datamodule, args)
+
+    # Setting
     monitor = EarlyStopping(args)
     makedir(f'./checkpoints/{args.model}')
     model_path = f'./checkpoints/{args.model}/{log_filename}_round_{runId}.pt'
@@ -154,7 +156,6 @@ def RunOnce(args, runId, log):
             print()
 
     if retrain_required:
-        # Setup training tool
         model.setup_optimizer(args)
         train_time = []
         for epoch in trange(args.epochs):
@@ -189,7 +190,7 @@ def RunExperiments(log, args):
         for key in results:
             metrics[key].append(results[key])
         # except Exception as e:
-            # log(f'Run {runId + 1} Error: {e}, This run will be skipped.')
+        # log(f'Run {runId + 1} Error: {e}, This run will be skipped.')
 
     log('*' * 20 + 'Experiment Results:' + '*' * 20)
 
@@ -203,30 +204,29 @@ def RunExperiments(log, args):
 
     return metrics
 
-
-if __name__ == '__main__':
-
-    args = get_config()
-    set_settings(args)
-    if args.dataset == 'gpu':
-        args.train_device = 'desktop-gpu-gtx-1080ti-fp32'
-        args.device_name = '1080Ti'
-
-    # logger plotter
-    exper_detail = f"Dataset : {args.dataset.upper()}, Model : {args.model}, Train_size : {args.train_size}, Bs : {args.bs}, Rank : {args.rank}, "
-    exper_detail += f"Train Device : {args.train_device} "
-    log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}'
-    print(log_filename)
-    log = Logger(log_filename, exper_detail, args)
-    plotter = MetricsPlotter(log_filename, args)
-    args.log = log
-
-    # Run Experiment
+# Run Experiment
+def main():
     try:
         metrics = RunExperiments(log, args)
         log.send_email(log_filename, metrics, 'zengyuxiang@hnu.edu.cn')
-        # log.send_email(log_filename, metrics, '21cychen@stu.edu.cn')
+        log.end_the_experiment()
     except Exception as e:
         import traceback
         error_details = traceback.format_exc()
-        log.send_email(log_filename, error_details, 'zengyuxiang@hnu.edu.cn')
+        print(error_details)
+        # log.send_email(log_filename, error_details, 'zengyuxiang@hnu.edu.cn')
+        sys.exit(1)  # 终止程序，并返回一个非零的退出状态码，表示程序出错
+
+
+if __name__ == '__main__':
+    # Experiment Settings, logger, plotter
+    from utils.config import get_config
+    from utils.logger import Logger
+    from utils.plotter import MetricsPlotter
+    from utils.utils import set_settings, set_seed
+    args = get_config()
+    set_settings(args)
+    log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}_Ablation{args.Ablation}'
+    plotter = MetricsPlotter(log_filename, args)
+    log = Logger(log_filename, plotter, args)
+    main()

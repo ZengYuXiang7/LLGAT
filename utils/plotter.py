@@ -14,6 +14,9 @@ class MetricsPlotter:
     def __init__(self, filename, args):
         self.args = args
         self.fileroot = f'./results/{args.model}/' + time.strftime('%Y%m%d', time.localtime(time.time())) + '/fig/'
+        exper_time = time.strftime('%H_%M_%S', time.localtime(time.time())) + '_'
+        self.filename = filename
+        self.exper_filename = self.fileroot + exper_time + self.filename
         makedir(self.fileroot)
         self.filename = filename
         self.all_rounds_results = []
@@ -60,4 +63,4 @@ class MetricsPlotter:
         plt.figtext(0.5, -0.2, combined_text, ha='center', va='center')
         plt.tight_layout()
         ts = time.asctime().replace(' ', '_').replace(':', '_')
-        plt.savefig(self.fileroot + self.filename + f'_{ts}.pdf', bbox_inches='tight', pad_inches=0.5)
+        plt.savefig(f'{self.exper_filename}.pdf', bbox_inches='tight', pad_inches=0.5)

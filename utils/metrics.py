@@ -7,22 +7,20 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 
 
 def ErrorMetrics(realVec, estiVec, args):
+    if isinstance(realVec, np.ndarray):
+        realVec = realVec.astype(float)
+    elif isinstance(realVec, t.Tensor):
+        realVec = realVec.cpu().detach().numpy().astype(float)
+    if isinstance(estiVec, np.ndarray):
+        estiVec = estiVec.astype(float)
+    elif isinstance(estiVec, t.Tensor):
+        estiVec = estiVec.cpu().detach().numpy().astype(float)
     if not args.classification:
-        if isinstance(realVec, np.ndarray):
-            realVec = realVec.astype(float)
-        elif isinstance(realVec, t.Tensor):
-            realVec = realVec.cpu().detach().numpy().astype(float)
-        if isinstance(estiVec, np.ndarray):
-            estiVec = estiVec.astype(float)
-        elif isinstance(estiVec, t.Tensor):
-            estiVec = estiVec.cpu().detach().numpy().astype(float)
-
         absError = np.abs(estiVec - realVec)
         MAE = np.mean(absError)
         RMSE = np.linalg.norm(absError) / np.sqrt(np.array(absError.shape[0]))
         NMAE = np.sum(np.abs(realVec - estiVec)) / np.sum(realVec)
         NRMSE = np.sqrt(np.sum((realVec - estiVec) ** 2)) / np.sqrt(np.sum(realVec ** 2))
-
         Acc = []
         thresholds = [0.01, 0.05, 0.10]
         for threshold in thresholds:
@@ -32,12 +30,10 @@ def ErrorMetrics(realVec, estiVec, args):
             Acc.append(accuracy)
 
         return {
-            'MAE': MAE,
-            'RMSE': RMSE,
             'NMAE': NMAE,
             'NRMSE': NRMSE,
-            'Acc_1': Acc[0],
-            'Acc_5': Acc[1],
+            'MAE': MAE,
+            'RMSE': RMSE,
             'Acc_10': Acc[2],
         }
     else:
@@ -52,4 +48,7 @@ def ErrorMetrics(realVec, estiVec, args):
             'P': P,
             'Recall': Recall
         }
+
+def count_parameters(model):
+    return sum(p.numel() for p in model.parameters() if p.requires_grad)
 

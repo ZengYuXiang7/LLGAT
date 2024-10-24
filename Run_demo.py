@@ -7,40 +7,68 @@ from datetime import datetime
 import sys
 sys.dont_write_bytecode = True
 
-def experiment_command():
-    # train_sizes = [100, 200, 400, 500, 900]
-    # ranks = [100]
-    # 创建一个命令列表
-    commands = []
+def debug(commands):
+    commands.append(f"python train_model.py --config_path ./exper_config.py --exp_name MLPConfig "
+                       f"--train_size 100 --retrain 1 --dataset cpu --rank 300")
+    return commands
 
-    # # 添加 CPU Experiment 的命令
-    # for rank in ranks:
-    #     for train_size in train_sizes:
-    #         command = f"python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size {train_size} --retrain 0 --rank {rank}"
-    #         commands.append(command)
-    #
-    # # 添加 GPU Experiment 的命令
-    # for rank in ranks:
-    #     for train_size in train_sizes:
-    #         command = f"python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size {train_size} --retrain 0 --rank {rank}"
-    #         commands.append(command)
+def Baselines(commands):
+    train_sizes = [100, 200, 400, 500, 900]
 
-
-    # 添加 Baselines 的命令
     train_sizes = [100]
-    # exps = ['MLPConfig', 'BrpNASConfig', 'LSTMConfig', 'GRUConfig', 'BiRnnConfig', 'FlopsConfig', 'DNNPerfConfig']
+    exps = ['MLPConfig', 'BrpNASConfig', 'LSTMConfig', 'GRUConfig', 'BiRnnConfig', 'FlopsConfig', 'DNNPerfConfig']
     exps = ['MLPConfig']
     for train_size in train_sizes:
         for exp in exps:
-            command = f"python train_model.py --config_path ./exper_config.py --exp_name {exp} --train_size {train_size} --retrain 0 --dataset cpu --rank 300"
+            command = (f"python train_model.py --config_path ./exper_config.py --exp_name {exp} "
+                       f"--train_size {train_size} --retrain 1 --dataset cpu --rank 300")
             commands.append(command)
-            
-    # train_sizes = [100, 200, 400, 500, 900]
-    # for train_size in train_sizes:
-    #     for exp in exps:
-    #         command = f"python train_model.py --config_path ./exper_config.py --exp_name {exp} --train_size {train_size} --retrain 0 --dataset gpu --rank 300"
-    #         commands.append(command)
+    train_sizes = [100, 200, 400, 500, 900]
+    for train_size in train_sizes:
+        for exp in exps:
+            command = (f"python train_model.py --config_path ./exper_config.py --exp_name {exp} "
+                       f"--train_size {train_size} --retrain 0 --dataset gpu --rank 300")
+            commands.append(command)
+    return commands
 
+
+def Ablation(commands):
+    # train_sizes = [100, 200, 400, 500, 900]
+    train_sizes = [50]
+    rank = 100
+    for ablation in [6]:
+        encoder = 'one_hot' if ablation in [3, 5, 6] else 'embed'
+        for train_size in train_sizes:
+            command = (f"python train_model.py --config_path ./exper_config.py --exp_name TestConfig "
+                       f"--train_size {train_size} --retrain 0 --rank {rank} --Ablation {ablation} --op_encoder {encoder} --debug 1")
+            commands.append(command)
+        for train_size in train_sizes:
+            command = (f"python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig "
+                       f"--train_size {train_size} --retrain 0 --rank {rank} --Ablation {ablation} --op_encoder {encoder} --debug 1")
+            commands.append(command)
+    return commands
+
+
+def Our_model(commands):
+    # train_sizes = [100, 200, 400, 500, 900]
+    train_sizes = [100]
+    ranks = [100]
+    for rank in ranks:
+        for train_size in train_sizes:
+            command = (f"python train_model.py --config_path ./exper_config.py --exp_name TestConfig "
+                       f"--train_size {train_size} --retrain 0 --rank {rank}")
+            commands.append(command)
+    for rank in ranks:
+        for train_size in train_sizes:
+            command = (f"python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig "
+                       f"--train_size {train_size} --retrain 0 --rank {rank}")
+            commands.append(command)
+    return commands
+
+
+def experiment_command():
+    commands = []
+    commands = Our_model(commands)
     return commands
 
 

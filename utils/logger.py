@@ -12,18 +12,31 @@ import os
 from utils.utils import makedir
 
 class Logger:
-    def __init__(self, filename, exper_datail, args):
-        self.args = args
+    def __init__(
+        self,
+        filename,
+        plotter,
+        args
+    ):
         self.clear_the_useless_logs()
-        self.exper_datail = exper_datail
+        self.plotter = plotter
+        self.exper_detail = f"Dataset : {args.dataset.upper()}, Model : {args.model}, Train_size : {args.train_size}, Bs : {args.bs}, Rank : {args.rank}, "
         self.fileroot = f'./results/{args.model}/' + time.strftime('%Y%m%d', time.localtime(time.time())) + '/log/'
         self.filename = filename
         makedir(self.fileroot)
-        exper_time = time.strftime('%H_%M_%S', time.localtime(time.time())) + '_'
-        self.exper_filename = self.fileroot + exper_time + self.filename
-        logging.basicConfig(level=logging.INFO, filename=f"{self.exper_filename}.log", filemode='w')
-        self.logger = logging.getLogger(self.args.model)
-        self.log(self.format_and_sort_args_dict(args.__dict__))
+        self.exper_time = time.strftime('%H_%M_%S', time.localtime(time.time())) + '_'
+        self.exper_filename = self.fileroot + self.exper_time + self.filename
+        logging.basicConfig(level=logging.INFO, filename=f"{self.exper_filename}.md", filemode='w', format='%(message)s')
+        # logging.basicConfig(level=logging.INFO, filename=f"{self.exper_filename}.md", filemode='w')
+        self.logger = logging.getLogger(args.model)
+        args.log = self
+        self.args = args
+        self.prepare_the_experiment()
+
+
+    def prepare_the_experiment(self):
+        self.logger.info('```python')
+        self.log(self.format_and_sort_args_dict(self.args.__dict__))
 
     def save_result(self, metrics):
         import pickle
@@ -36,7 +49,6 @@ class Logger:
             all_info[key] = metrics[key]
             all_info[key + '_mean'] = np.mean(metrics[key])
             all_info[key + '_std'] = np.std(metrics[key])
-        print(all_info)
         # 保存序列化结果
         address = f'./results/metrics/' + self.filename
         with open(address + '.pkl', 'wb') as f:
@@ -157,35 +169,37 @@ class Logger:
 
     # 邮件发送日志
     def send_email(self, subject, body, receiver_email="zengyuxiang@hnu.edu.cn"):
+        if self.args.debug:
+            return
         import yagmail
         import os
         import pickle
-        if isinstance(body, dict):  # 判断 body 是否是字典
+
+        if isinstance(body, dict):
             metrics = body
             body = []
-            # 添加实验结果部分
+            # Add experiment results
             body.append('*' * 10 + 'Experiment Results:' + '*' * 10)
             for key in metrics:
                 body.append(f'{key}: {np.mean(metrics[key]):.4f} ± {np.std(metrics[key]):.4f}')
 
-            # 添加实验成功提示
+            # Add experiment success message
             body.append('*' * 10 + 'Experiment Success' + '*' * 10)
 
-            # print(metrics)
+            # Add metrics for each round
             for i in range(self.args.rounds):
                 round_metrics = f"Round {i + 1} : "
                 for key in metrics:
                     round_metrics += f"{key}: {metrics[key][i]:.4f} "
                 body.append(round_metrics)
 
-            # 添加格式化的 args 字典信息
+            # Add formatted args dictionary
             body.append(self.format_and_sort_args_dict(self.args.__dict__, 3))
         else:
-            print(body)
             temp = body
             body = [self.format_and_sort_args_dict(self.args.__dict__, 3), temp]
 
-        # 获得主目录下的邮件授权码，这部分为个人私有。
+        # Get email credentials
         email_code_address = os.path.expanduser('~') + '/qq_smtp_info.pickle'
         try:
             with open(email_code_address, 'rb') as f:
@@ -193,14 +207,36 @@ class Logger:
             sender_email = all_info['email']
             sender_password = all_info['password']
         except FileNotFoundError:
-            print("非管理员，无法发送邮件")
+            print("Non-admin user, email sending functionality is disabled")
             return False
 
         try:
-            # 发送 HTML 格式的邮件
+            # Initialize the SMTP server
             yag = yagmail.SMTP(user=sender_email, password=sender_password, host='smtp.qq.com')
-            yag.send(to=receiver_email, subject=subject, contents=body)
-            print("邮件发送成功!")
-        except Exception as e:
-            print(f"发送邮件时出错: {e}")
 
+            # Prepare the contents
+            contents = body
+
+            # Get the attachment path
+            attachment_path = self.plotter.exper_filename + '.pdf'
+
+            # Send the email with the attachment
+            yag.send(
+                to=receiver_email,
+                subject=subject,
+                contents=contents,
+                attachments=attachment_path if os.path.isfile(attachment_path) else None
+            )
+            print("Email sent successfully!")
+        except Exception as e:
+            print(f"Error sending email: {e}")
+
+
+    def end_the_experiment(self):
+        self.logger.info('```')
+        self.logger.info('')
+        self.logger.info('<div  align="center"> ')
+        self.logger.info(f'<img src="../fig/{self.exper_time + self.filename}.pdf" ')
+        self.logger.info('width = "900" height = "800" ')
+        self.logger.info('alt="1" align=center />')
+        self.logger.info('</div>')

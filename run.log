@@ -118,3 +118,271 @@ All commands executed successfully.
 Experiment Start!!!
 Running at 2024-10-13 17:34: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
 All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:07: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:10: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:28: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:33: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:33: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:38: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:38: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:43: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:43: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:45: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:48: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 20:48: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:52: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 0 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-13 20:52: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 20:54: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 21:01: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 21:05: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-13 21:12: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:45: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-15 14:45: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:46: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:47: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:51: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:51: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:51: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:54: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:54: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-15 14:54: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100
+Experiment Start!!!
+Experiment Start!!!
+Experiment Start!!!
+Running at 2024-10-15 15:06: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:06: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:06: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Running at 2024-10-15 15:06: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Experiment Start!!!
+Running at 2024-10-15 15:07: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:07: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:07: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Experiment Start!!!
+Running at 2024-10-15 15:07: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:07: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:07: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Running at 2024-10-15 15:07: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Running at 2024-10-15 15:07: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 3 --op_encoder one_hot --debug 1
+Experiment Start!!!
+Running at 2024-10-15 15:09: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:09: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:09: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Experiment Start!!!
+Running at 2024-10-15 15:09: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 0 --op_encoder embed --debug 1
+Running at 2024-10-15 15:09: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 0 --op_encoder embed --debug 1
+Experiment Start!!!
+Running at 2024-10-15 15:10: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 0 --op_encoder embed --debug 1
+Running at 2024-10-15 15:10: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 0 --op_encoder embed --debug 1
+Running at 2024-10-15 15:11: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:11: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:11: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Running at 2024-10-15 15:11: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Running at 2024-10-15 15:11: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 3 --op_encoder one_hot --debug 1
+Running at 2024-10-15 15:11: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 3 --op_encoder one_hot --debug 1
+Experiment Start!!!
+Running at 2024-10-15 15:13: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 0 --op_encoder embed --debug 1
+Running at 2024-10-15 15:13: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 0 --op_encoder embed --debug 1
+Running at 2024-10-15 15:14: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:14: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 1 --op_encoder embed --debug 1
+Running at 2024-10-15 15:15: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Running at 2024-10-15 15:15: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 2 --op_encoder embed --debug 1
+Running at 2024-10-15 15:15: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 3 --op_encoder one_hot --debug 1
+Running at 2024-10-15 15:15: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 3 --op_encoder one_hot --debug 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-16 13:20: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:20: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:20: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Experiment Start!!!
+Running at 2024-10-16 13:20: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:20: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:20: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:20: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:21: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:22: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:23: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Experiment Start!!!
+Running at 2024-10-16 13:24: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:25: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:25: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Retrying at 2024-10-16 13:25: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Experiment Start!!!
+Running at 2024-10-16 13:25: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Experiment Start!!!
+Running at 2024-10-19 17:03: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Running at 2024-10-19 17:04: python train_model.py --config_path ./exper_config.py --exp_name TestGPUConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 19:40: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Experiment Start!!!
+Running at 2024-10-24 19:43: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 50 --retrain 0 --rank 100 --Ablation 6 --op_encoder one_hot --debug 1
+Experiment Start!!!
+Running at 2024-10-24 19:45: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 20:13: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+Retrying at 2024-10-24 20:13: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+Retrying at 2024-10-24 20:13: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-24 20:13: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 20:18: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 20:19: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+Experiment Start!!!
+Running at 2024-10-24 20:20: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 20:21: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 20:25: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 21:32: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Retrying at 2024-10-24 21:32: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Retrying at 2024-10-24 21:32: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Experiment Start!!!
+Running at 2024-10-24 21:33: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100

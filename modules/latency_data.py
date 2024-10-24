@@ -130,7 +130,6 @@ def get_matrix_and_ops(g, prune=True, keep_dims=True):
     return matrix, labels
 
 
-
 def get_adjacency_and_features(matrix, labels):
     global_row = np.array([0, 1, 1, 1, 1, 1, 1, 1, 1])
     new_graph = np.zeros((9, 9))

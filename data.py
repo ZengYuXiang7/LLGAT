@@ -27,7 +27,6 @@ class experiment:
         file_names = os.listdir(args.path + args.dataset)
         pickle_files = [file for file in file_names if file.endswith('.pickle')]
         data = []
-        
         for i in range(len(pickle_files)):
             pickle_file = os.path.join(args.path, args.dataset, pickle_files[i])
             if pickle_files[i].split('.')[-2] in args.train_device:
@@ -79,13 +78,8 @@ class DataModule:
         max_value = y.max()
         y /= max_value
 
-        # train_size = int(len(x) * args.density)
-        if not args.inductive:
-            train_size = int(args.train_size)
-            valid_size = int(len(x) * 0.10)
-        else:
-            train_size = 0
-            valid_size = 0
+        train_size = int(args.train_size)
+        valid_size = int(len(x) * 0.10)
 
         train_x = x[:train_size]
         train_y = y[:train_size]

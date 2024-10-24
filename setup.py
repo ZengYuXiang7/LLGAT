@@ -30,7 +30,6 @@ setup(
         "yagmail>=0.14.0",
         "faiss-cpu==1.6.5",
         "openai==0.28.0",
-        "onnx>=1.0.0",
         "netron",
     ],
     entry_points={

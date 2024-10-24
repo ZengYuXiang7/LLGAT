@@ -40,7 +40,6 @@ class DatasetInfo:
 
 
 
-
 @dataclass
 class TrainingConfig:
     bs: int = 32
@@ -53,5 +52,4 @@ class TrainingConfig:
 @dataclass
 class OtherConfig:
     classification: bool = False
-    visualize: bool = True
-    inductive: bool = False
+    Ablation: int = 0

@@ -10,7 +10,6 @@ class TestConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, T
     model: str = 'ours'
     bs: int = 32
     rank: int = 100
-
     # Encoder
     op_encoder: str = 'embed'
     # GAT
@@ -25,9 +24,6 @@ class TestConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo, T
     device_name: str = 'core-i7-7820x'  # 'core-i9-13900k'
     train_device: str = 'desktop-cpu-core-i7-7820x-fp32'
     eval_device: str = 'desktop-cpu-core-i9-13900k-fp32'
-
-    att: int = 0
-    cross: int = 0
 
 
 @dataclass
@@ -49,9 +45,6 @@ class TestGPUConfig(ExperimentConfig, BaseModelConfig, LoggerConfig, DatasetInfo
     dataset: str = 'gpu'
     device_name: str = '1080Ti'  # 'core-i9-13900k'
     train_device: str = 'desktop-gpu-gtx-1080ti-fp32'
-
-    att: int = 0
-    cross: int = 0
 
 
 @dataclass
