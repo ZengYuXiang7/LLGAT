@@ -386,3 +386,102 @@ Command failed, retrying in 3 seconds: python train_model.py --config_path ./exp
 Experiment Start!!!
 Running at 2024-10-24 21:33: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
 Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Experiment Start!!!
+Running at 2024-10-24 21:47: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:12: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-24 22:12: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-24 22:12: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-24 22:13: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-24 22:20: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:21: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:24: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:26: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-24 22:27: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:28: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:31: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:33: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:34: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:35: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:36: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:38: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-24 22:38: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-25 11:06: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:06: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:06: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-25 11:06: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-25 11:07: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:08: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:08: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-25 11:08: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:08: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:08: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:09: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:09: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:09: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Retrying at 2024-10-25 11:09: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-25 11:09: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-25 11:10: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Command failed, retrying in 3 seconds: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-25 11:11: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+Experiment Start!!!
+Running at 2024-10-25 11:12: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 1
+All commands executed successfully.
+Experiment Start!!!
+Running at 2024-10-25 11:14: python train_model.py --config_path ./exper_config.py --exp_name TestConfig --train_size 100 --retrain 0 --rank 100
+Experiment Start!!!
+Running at 2024-10-25 11:41: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-25 11:43: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-25 11:45: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3

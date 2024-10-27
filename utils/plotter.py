@@ -14,11 +14,10 @@ class MetricsPlotter:
     def __init__(self, filename, args):
         self.args = args
         self.fileroot = f'./results/{args.model}/' + time.strftime('%Y%m%d', time.localtime(time.time())) + '/fig/'
+        makedir(self.fileroot)
         exper_time = time.strftime('%H_%M_%S', time.localtime(time.time())) + '_'
         self.filename = filename
         self.exper_filename = self.fileroot + exper_time + self.filename
-        makedir(self.fileroot)
-        self.filename = filename
         self.all_rounds_results = []
         self.one_round_results = collections.defaultdict(list)
 
@@ -51,16 +50,16 @@ class MetricsPlotter:
 
         # 处理要显示的文本，实现自动换行
         wrapper = textwrap.TextWrapper(width=90)  # 每行最多90个字符
-        args_text = "\n".join(wrapper.wrap(str(self.args.__dict__)))
+        # args_text = "\n".join(wrapper.wrap(str(self.args.__dict__)))
 
         metrics_text = "\n".join(
             [f'{key}: {np.mean(metrics[key]):.4f} ± {np.std(metrics[key]):.4f}' for key in metrics]
         )
 
-        combined_text = f"{args_text}\n\n{metrics_text}"
+        # combined_text = f"{args_text}\n\n{metrics_text}"
+        combined_text = f"{metrics_text}"
 
         plt.rcParams['font.size'] = 24  # 设置全局字体大小为 24
         plt.figtext(0.5, -0.2, combined_text, ha='center', va='center')
         plt.tight_layout()
-        ts = time.asctime().replace(' ', '_').replace(':', '_')
         plt.savefig(f'{self.exper_filename}.pdf', bbox_inches='tight', pad_inches=0.5)

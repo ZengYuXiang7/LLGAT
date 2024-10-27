@@ -9,7 +9,7 @@ sys.dont_write_bytecode = True
 
 def debug(commands):
     commands.append(f"python train_model.py --config_path ./exper_config.py --exp_name MLPConfig "
-                       f"--train_size 100 --retrain 1 --dataset cpu --rank 300")
+                       f"--train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3")
     return commands
 
 def Baselines(commands):
@@ -68,7 +68,7 @@ def Our_model(commands):
 
 def experiment_command():
     commands = []
-    commands = Our_model(commands)
+    commands = debug(commands)
     return commands
 
 

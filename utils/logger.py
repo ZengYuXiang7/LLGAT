@@ -9,6 +9,7 @@ import platform
 import glob
 import os
 
+from train_efficiency import get_efficiency
 from utils.utils import makedir
 
 class Logger:
@@ -18,7 +19,6 @@ class Logger:
         plotter,
         args
     ):
-        self.clear_the_useless_logs()
         self.plotter = plotter
         self.exper_detail = f"Dataset : {args.dataset.upper()}, Model : {args.model}, Train_size : {args.train_size}, Bs : {args.bs}, Rank : {args.rank}, "
         self.fileroot = f'./results/{args.model}/' + time.strftime('%Y%m%d', time.localtime(time.time())) + '/log/'
@@ -183,6 +183,11 @@ class Logger:
             for key in metrics:
                 body.append(f'{key}: {np.mean(metrics[key]):.4f} ± {np.std(metrics[key]):.4f}')
 
+            flops, params, inference_time = get_efficiency(self.args)
+            body.append(f"Flops: {flops:.0f}")
+            body.append(f"Params: {params:.0f}")
+            body.append(f"Inference time: {inference_time:.2f} ms")
+
             # Add experiment success message
             body.append('*' * 10 + 'Experiment Success' + '*' * 10)
 
@@ -192,6 +197,7 @@ class Logger:
                 for key in metrics:
                     round_metrics += f"{key}: {metrics[key][i]:.4f} "
                 body.append(round_metrics)
+
 
             # Add formatted args dictionary
             body.append(self.format_and_sort_args_dict(self.args.__dict__, 3))
@@ -240,3 +246,4 @@ class Logger:
         self.logger.info('width = "900" height = "800" ')
         self.logger.info('alt="1" align=center />')
         self.logger.info('</div>')
+        self.clear_the_useless_logs()

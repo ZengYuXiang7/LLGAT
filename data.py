@@ -33,7 +33,7 @@ class experiment:
                 with open(pickle_file, 'rb') as f:
                     now = pickle.load(f)
                 data.append(now)
-                print(pickle_files[i])
+                # print(pickle_files[i])
         return data
 
     def preprocess_data(self, data, args):
@@ -61,7 +61,7 @@ class DataModule:
         self.train_x, self.train_y, self.valid_x, self.valid_y, self.test_x, self.test_y, self.max_value = self.get_train_valid_test_dataset(self.x, self.y, args)
         self.train_set, self.valid_set, self.test_set = self.get_dataset(self.train_x, self.train_y, self.valid_x, self.valid_y, self.test_x, self.test_y, args)
         self.train_loader, self.valid_loader, self.test_loader = get_dataloaders(self.train_set, self.valid_set, self.test_set, args)
-        args.log.only_print(f'Train_length : {len(self.train_loader.dataset)} Valid_length : {len(self.valid_loader.dataset)} Test_length : {len(self.test_loader.dataset)} Max_value : {self.max_value:.2f}')
+        # args.log.only_print(f'Train_length : {len(self.train_loader.dataset)} Valid_length : {len(self.valid_loader.dataset)} Test_length : {len(self.test_loader.dataset)} Max_value : {self.max_value:.2f}')
 
     def get_dataset(self, train_x, train_y, valid_x, valid_y, test_x, test_y, args):
         return (

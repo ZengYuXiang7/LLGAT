@@ -63,7 +63,6 @@ class GraphEncoder(torch.nn.Module):
 
     def forward(self, graph, features):
         g, feats = graph, features
-        print(feats.shape)
         for i, (layer, norm, act) in enumerate(zip(self.layers, self.norms, self.acts)):
             feats = layer(g, feats)
             if self.args.graph_encoder == 'gat':

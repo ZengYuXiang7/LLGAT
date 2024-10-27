@@ -18,6 +18,7 @@ from baselines.lstm import LSTM
 from baselines.mlp import MLP
 from baselines.gnn import GraphSAGEConv
 from modules.LLGAT import LLGAT
+from train_efficiency import get_efficiency
 from utils.metrics import ErrorMetrics
 from utils.monitor import EarlyStopping
 from utils.trainer import get_loss_function, get_optimizer
@@ -184,31 +185,35 @@ def RunExperiments(log, args):
 
     for runId in range(args.rounds):
         plotter.reset_round()
-        # try:
-        results = RunOnce(args, runId, log)
-        plotter.append_round()
-        for key in results:
-            metrics[key].append(results[key])
-        # except Exception as e:
-        # log(f'Run {runId + 1} Error: {e}, This run will be skipped.')
+        try:
+            results = RunOnce(args, runId, log)
+            for key in results:
+                metrics[key].append(results[key])
+            plotter.append_round()
+        except Exception as e:
+            log(f'Run {runId + 1} Error: {e}, This run will be skipped.')
+        except KeyboardInterrupt:
+            break
 
     log('*' * 20 + 'Experiment Results:' + '*' * 20)
-
     for key in metrics:
         log(f'{key}: {np.mean(metrics[key]):.4f} ± {np.std(metrics[key]):.4f}')
-
+    flops, params, inference_time = get_efficiency(args)
+    log(f"Flops: {flops:.0f}")
+    log(f"Params: {params:.0f}")
+    log(f"Inference time: {inference_time:.2f} ms")
     if args.record:
         log.save_result(metrics)
         plotter.record_metric(metrics)
     log('*' * 20 + 'Experiment Success' + '*' * 20)
-
     return metrics
 
-# Run Experiment
+
 def main():
     try:
         metrics = RunExperiments(log, args)
         log.send_email(log_filename, metrics, 'zengyuxiang@hnu.edu.cn')
+        # log.send_email(log_filename, metrics, '22rqwang@stu.edu.cn')
         log.end_the_experiment()
     except Exception as e:
         import traceback
@@ -226,7 +231,8 @@ if __name__ == '__main__':
     from utils.utils import set_settings, set_seed
     args = get_config()
     set_settings(args)
-    log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}_Ablation{args.Ablation}'
+    # log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}_Ablation{args.Ablation}'
+    log_filename = f'Model_{args.model}_{args.dataset}_S{args.train_size}_R{args.rank}'
     plotter = MetricsPlotter(log_filename, args)
     log = Logger(log_filename, plotter, args)
     main()

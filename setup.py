@@ -31,6 +31,7 @@ setup(
         "faiss-cpu==1.6.5",
         "openai==0.28.0",
         "netron",
+        "thop",
     ],
     entry_points={
         "console_scripts": [
