@@ -19,6 +19,7 @@ class Logger:
         plotter,
         args
     ):
+        self.clear_the_useless_logs()
         self.plotter = plotter
         self.exper_detail = f"Dataset : {args.dataset.upper()}, Model : {args.model}, Train_size : {args.train_size}, Bs : {args.bs}, Rank : {args.rank}, "
         self.fileroot = f'./results/{args.model}/' + time.strftime('%Y%m%d', time.localtime(time.time())) + '/log/'
@@ -77,7 +78,7 @@ class Logger:
 
     def show_epoch_error(self, runId, epoch, monitor, epoch_loss, result_error, train_time):
         if self.args.verbose and epoch % self.args.verbose == 0:
-            self.only_print(f"\033[1;38;2;151;200;129m{self.exper_datail}\033[0m")
+            self.only_print(f"\033[1;38;2;151;200;129m{self.exper_detail}\033[0m")
             self.only_print(f'Best NMAE Epoch {monitor.best_epoch} = {monitor.best_score * -1:.4f}  now = {(epoch - monitor.best_epoch):d}')
             if self.args.classification:
                 self.only_print(f"Round={runId + 1} Epoch={epoch + 1:03d} Loss={epoch_loss:.4f} vAcc={result_error['Acc']:.4f} vF1={result_error['F1']:.4f} vPrecision={result_error['P']:.4f} vRecall={result_error['Recall']:.4f} time={sum(train_time):.1f} s ")
@@ -107,7 +108,7 @@ class Logger:
     def clear_the_useless_logs(self):
         def delete_small_log_files(directory):
             # 获取所有.log文件
-            log_files = glob.glob(os.path.join(directory, '*.log'))
+            log_files = glob.glob(os.path.join(directory, '*.md'))
             number_lines = 23
 
             # 遍历所有的.log文件
@@ -132,40 +133,39 @@ class Logger:
                 except Exception as e:
                     print(f"Error processing file {file_path}: {e}")
 
-        def delete_empty_directories(dir_path):
-            import os
-            # 检查目录是否存在
-            if os.path.exists(dir_path) and os.path.isdir(dir_path):
-                # 遍历目录中的所有文件和子目录，从最底层开始
-                for root, dirs, files in os.walk(dir_path, topdown=False):
-                    # 先删除空的子目录
-                    for name in dirs:
-                        dir_to_remove = os.path.join(root, name)
-                        # 如果目录是空的，则删除它
-                        try:
-                            if not os.listdir(dir_to_remove):  # 判断目录是否为空
-                                os.rmdir(dir_to_remove)
-                                print(f"Directory {dir_to_remove} has been deleted.")
-                        except FileNotFoundError:
-                            # 如果目录已经不存在，忽略此错误
-                            pass
-                    # 检查当前目录是否也是空的，如果是则删除它
-                    try:
-                        if not os.listdir(root):  # 判断当前根目录是否为空
-                            os.rmdir(root)
-                            print(f"Directory {root} has been deleted.")
-                    except FileNotFoundError:
-                        # 如果目录已经不存在，忽略此错误
-                        pass
-            else:
-                print(f"Directory {dir_path} does not exist.")
-
-        # 使用os.walk来遍历目录
         root_directory = f'./results/'
-        delete_empty_directories(root_directory)
         for dirpath, dirnames, filenames in os.walk(root_directory):
             if 'log' in dirpath:
                 delete_small_log_files(dirpath)
+
+    def delete_empty_directories(self, dir_path):
+        import os
+        # 检查目录是否存在
+        if os.path.exists(dir_path) and os.path.isdir(dir_path):
+            # 遍历目录中的所有文件和子目录，从最底层开始
+            for root, dirs, files in os.walk(dir_path, topdown=False):
+                # 先删除空的子目录
+                for name in dirs:
+                    dir_to_remove = os.path.join(root, name)
+                    # 如果目录是空的，则删除它
+                    try:
+                        if not os.listdir(dir_to_remove):  # 判断目录是否为空
+                            os.rmdir(dir_to_remove)
+                            print(f"Directory {dir_to_remove} has been deleted.")
+                    except FileNotFoundError:
+                        # 如果目录已经不存在，忽略此错误
+                        pass
+                # 检查当前目录是否也是空的，如果是则删除它
+                try:
+                    if not os.listdir(root):  # 判断当前根目录是否为空
+                        os.rmdir(root)
+                        print(f"Directory {root} has been deleted.")
+                except FileNotFoundError:
+                    # 如果目录已经不存在，忽略此错误
+                    pass
+        else:
+            print(f"Directory {dir_path} does not exist.")
+
 
     # 邮件发送日志
     def send_email(self, subject, body, receiver_email="zengyuxiang@hnu.edu.cn"):
@@ -246,4 +246,6 @@ class Logger:
         self.logger.info('width = "900" height = "800" ')
         self.logger.info('alt="1" align=center />')
         self.logger.info('</div>')
-        self.clear_the_useless_logs()
+        # 使用os.walk来遍历目录
+        root_directory = f'./results/'
+        self.delete_empty_directories(root_directory)

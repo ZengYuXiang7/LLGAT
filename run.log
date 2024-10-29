@@ -485,3 +485,19 @@ Experiment Start!!!
 Running at 2024-10-25 11:43: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
 Experiment Start!!!
 Running at 2024-10-25 11:45: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-29 12:45: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-29 12:45: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-29 12:45: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-29 12:46: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-29 12:46: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-29 12:46: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-29 12:46: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
+Experiment Start!!!
+Running at 2024-10-29 12:47: python train_model.py --config_path ./exper_config.py --exp_name MLPConfig --train_size 100 --retrain 1 --dataset cpu --rank 300 --rounds 3
