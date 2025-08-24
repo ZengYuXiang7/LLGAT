@@ -1,3 +1,0 @@
-[console_scripts]
-run = Run_demo:main
-
