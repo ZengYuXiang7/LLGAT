@@ -1,5 +1,5 @@
 # coding : utf-8
-# Author : yuxiang Zeng
+# Author : Anonymous
 
 from default_config import *
 from dataclasses import dataclass

@@ -1,5 +1,5 @@
 # coding : utf-8
-# Author : yuxiang Zeng
+# Author : Anonymous
 import platform
 import numpy as np
 import torch

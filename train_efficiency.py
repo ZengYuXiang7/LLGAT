@@ -1,5 +1,5 @@
 # coding : utf-8
-# Author : yuxiang Zeng
+# Author : Anonymous
 
 
 # def estimate_gpu_memory(model, sample_input, args):
